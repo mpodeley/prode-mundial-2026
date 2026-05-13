@@ -1,0 +1,60 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isAdmin() {
+      return isSignedIn()
+        && exists(/databases/$(database)/documents/users/$(request.auth.uid))
+        && get(/databases/$(database)/documents/users/$(request.auth.uid)).data.isAdmin == true;
+    }
+
+    function nicknameTaken(nick) {
+      return exists(/databases/$(database)/documents/nicknames/$(nick));
+    }
+
+    match /users/{uid} {
+      allow read: if isSignedIn();
+      allow create: if isSignedIn()
+        && request.auth.uid == uid
+        && request.resource.data.isAdmin == false;
+      allow update: if isSignedIn()
+        && request.auth.uid == uid
+        && request.resource.data.isAdmin == resource.data.isAdmin;
+      allow delete: if false;
+    }
+
+    match /nicknames/{nick} {
+      allow read: if true;
+      allow create: if isSignedIn() && request.resource.data.uid == request.auth.uid;
+      allow update, delete: if false;
+    }
+
+    match /matches/{id} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    match /predictions/{predId} {
+      allow read: if isSignedIn();
+      allow create, update: if isSignedIn()
+        && request.resource.data.uid == request.auth.uid
+        && predId == request.auth.uid + '_' + request.resource.data.matchId
+        && exists(/databases/$(database)/documents/matches/$(request.resource.data.matchId))
+        && get(/databases/$(database)/documents/matches/$(request.resource.data.matchId)).data.kickoff > request.time
+        && request.resource.data.home is int
+        && request.resource.data.away is int
+        && request.resource.data.home >= 0 && request.resource.data.home <= 20
+        && request.resource.data.away >= 0 && request.resource.data.away <= 20;
+      allow delete: if false;
+    }
+
+    match /config/{id} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+  }
+}

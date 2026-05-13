@@ -1,0 +1,2258 @@
+[
+  {
+    "id": "M-001",
+    "stage": "group",
+    "group": "A",
+    "matchday": 1,
+    "kickoff": "2026-06-11T13:00:00-03:00",
+    "venue": "San Francisco Bay Area",
+    "home": {
+      "code": "A1",
+      "name": "Equipo A1",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "A2",
+      "name": "Equipo A2",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-002",
+    "stage": "group",
+    "group": "A",
+    "matchday": 1,
+    "kickoff": "2026-06-11T16:00:00-03:00",
+    "venue": "Atlanta",
+    "home": {
+      "code": "A3",
+      "name": "Equipo A3",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "A4",
+      "name": "Equipo A4",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-003",
+    "stage": "group",
+    "group": "B",
+    "matchday": 1,
+    "kickoff": "2026-06-11T19:00:00-03:00",
+    "venue": "New York/New Jersey",
+    "home": {
+      "code": "B1",
+      "name": "Equipo B1",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "B2",
+      "name": "Equipo B2",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-004",
+    "stage": "group",
+    "group": "B",
+    "matchday": 1,
+    "kickoff": "2026-06-11T22:00:00-03:00",
+    "venue": "Toronto",
+    "home": {
+      "code": "B3",
+      "name": "Equipo B3",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "B4",
+      "name": "Equipo B4",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-005",
+    "stage": "group",
+    "group": "C",
+    "matchday": 1,
+    "kickoff": "2026-06-12T13:00:00-03:00",
+    "venue": "Los Angeles",
+    "home": {
+      "code": "C1",
+      "name": "Equipo C1",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "C2",
+      "name": "Equipo C2",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-006",
+    "stage": "group",
+    "group": "C",
+    "matchday": 1,
+    "kickoff": "2026-06-12T16:00:00-03:00",
+    "venue": "Guadalajara",
+    "home": {
+      "code": "C3",
+      "name": "Equipo C3",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "C4",
+      "name": "Equipo C4",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-007",
+    "stage": "group",
+    "group": "D",
+    "matchday": 1,
+    "kickoff": "2026-06-12T19:00:00-03:00",
+    "venue": "Houston",
+    "home": {
+      "code": "D1",
+      "name": "Equipo D1",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "D2",
+      "name": "Equipo D2",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-008",
+    "stage": "group",
+    "group": "D",
+    "matchday": 1,
+    "kickoff": "2026-06-12T22:00:00-03:00",
+    "venue": "Seattle",
+    "home": {
+      "code": "D3",
+      "name": "Equipo D3",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "D4",
+      "name": "Equipo D4",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-009",
+    "stage": "group",
+    "group": "E",
+    "matchday": 1,
+    "kickoff": "2026-06-13T13:00:00-03:00",
+    "venue": "Boston",
+    "home": {
+      "code": "E1",
+      "name": "Equipo E1",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "E2",
+      "name": "Equipo E2",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-010",
+    "stage": "group",
+    "group": "E",
+    "matchday": 1,
+    "kickoff": "2026-06-13T16:00:00-03:00",
+    "venue": "Philadelphia",
+    "home": {
+      "code": "E3",
+      "name": "Equipo E3",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "E4",
+      "name": "Equipo E4",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-011",
+    "stage": "group",
+    "group": "F",
+    "matchday": 1,
+    "kickoff": "2026-06-13T19:00:00-03:00",
+    "venue": "Vancouver",
+    "home": {
+      "code": "F1",
+      "name": "Equipo F1",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "F2",
+      "name": "Equipo F2",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-012",
+    "stage": "group",
+    "group": "F",
+    "matchday": 1,
+    "kickoff": "2026-06-13T22:00:00-03:00",
+    "venue": "Miami",
+    "home": {
+      "code": "F3",
+      "name": "Equipo F3",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "F4",
+      "name": "Equipo F4",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-013",
+    "stage": "group",
+    "group": "G",
+    "matchday": 1,
+    "kickoff": "2026-06-14T13:00:00-03:00",
+    "venue": "Monterrey",
+    "home": {
+      "code": "G1",
+      "name": "Equipo G1",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "G2",
+      "name": "Equipo G2",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-014",
+    "stage": "group",
+    "group": "G",
+    "matchday": 1,
+    "kickoff": "2026-06-14T16:00:00-03:00",
+    "venue": "Kansas City",
+    "home": {
+      "code": "G3",
+      "name": "Equipo G3",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "G4",
+      "name": "Equipo G4",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-015",
+    "stage": "group",
+    "group": "H",
+    "matchday": 1,
+    "kickoff": "2026-06-14T19:00:00-03:00",
+    "venue": "Mexico City",
+    "home": {
+      "code": "H1",
+      "name": "Equipo H1",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "H2",
+      "name": "Equipo H2",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-016",
+    "stage": "group",
+    "group": "H",
+    "matchday": 1,
+    "kickoff": "2026-06-14T22:00:00-03:00",
+    "venue": "Dallas",
+    "home": {
+      "code": "H3",
+      "name": "Equipo H3",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "H4",
+      "name": "Equipo H4",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-017",
+    "stage": "group",
+    "group": "I",
+    "matchday": 1,
+    "kickoff": "2026-06-15T13:00:00-03:00",
+    "venue": "San Francisco Bay Area",
+    "home": {
+      "code": "I1",
+      "name": "Equipo I1",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "I2",
+      "name": "Equipo I2",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-018",
+    "stage": "group",
+    "group": "I",
+    "matchday": 1,
+    "kickoff": "2026-06-15T16:00:00-03:00",
+    "venue": "Atlanta",
+    "home": {
+      "code": "I3",
+      "name": "Equipo I3",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "I4",
+      "name": "Equipo I4",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-019",
+    "stage": "group",
+    "group": "J",
+    "matchday": 1,
+    "kickoff": "2026-06-15T19:00:00-03:00",
+    "venue": "New York/New Jersey",
+    "home": {
+      "code": "J1",
+      "name": "Equipo J1",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "J2",
+      "name": "Equipo J2",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-020",
+    "stage": "group",
+    "group": "J",
+    "matchday": 1,
+    "kickoff": "2026-06-15T22:00:00-03:00",
+    "venue": "Toronto",
+    "home": {
+      "code": "J3",
+      "name": "Equipo J3",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "J4",
+      "name": "Equipo J4",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-021",
+    "stage": "group",
+    "group": "K",
+    "matchday": 1,
+    "kickoff": "2026-06-16T13:00:00-03:00",
+    "venue": "Los Angeles",
+    "home": {
+      "code": "K1",
+      "name": "Equipo K1",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "K2",
+      "name": "Equipo K2",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-022",
+    "stage": "group",
+    "group": "K",
+    "matchday": 1,
+    "kickoff": "2026-06-16T16:00:00-03:00",
+    "venue": "Guadalajara",
+    "home": {
+      "code": "K3",
+      "name": "Equipo K3",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "K4",
+      "name": "Equipo K4",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-023",
+    "stage": "group",
+    "group": "L",
+    "matchday": 1,
+    "kickoff": "2026-06-16T19:00:00-03:00",
+    "venue": "Houston",
+    "home": {
+      "code": "L1",
+      "name": "Equipo L1",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "L2",
+      "name": "Equipo L2",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-024",
+    "stage": "group",
+    "group": "L",
+    "matchday": 1,
+    "kickoff": "2026-06-16T22:00:00-03:00",
+    "venue": "Seattle",
+    "home": {
+      "code": "L3",
+      "name": "Equipo L3",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "L4",
+      "name": "Equipo L4",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-025",
+    "stage": "group",
+    "group": "A",
+    "matchday": 2,
+    "kickoff": "2026-06-17T13:00:00-03:00",
+    "venue": "Boston",
+    "home": {
+      "code": "A1",
+      "name": "Equipo A1",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "A3",
+      "name": "Equipo A3",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-026",
+    "stage": "group",
+    "group": "A",
+    "matchday": 2,
+    "kickoff": "2026-06-17T16:00:00-03:00",
+    "venue": "Philadelphia",
+    "home": {
+      "code": "A2",
+      "name": "Equipo A2",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "A4",
+      "name": "Equipo A4",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-027",
+    "stage": "group",
+    "group": "B",
+    "matchday": 2,
+    "kickoff": "2026-06-17T19:00:00-03:00",
+    "venue": "Vancouver",
+    "home": {
+      "code": "B1",
+      "name": "Equipo B1",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "B3",
+      "name": "Equipo B3",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-028",
+    "stage": "group",
+    "group": "B",
+    "matchday": 2,
+    "kickoff": "2026-06-17T22:00:00-03:00",
+    "venue": "Miami",
+    "home": {
+      "code": "B2",
+      "name": "Equipo B2",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "B4",
+      "name": "Equipo B4",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-029",
+    "stage": "group",
+    "group": "C",
+    "matchday": 2,
+    "kickoff": "2026-06-18T13:00:00-03:00",
+    "venue": "Monterrey",
+    "home": {
+      "code": "C1",
+      "name": "Equipo C1",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "C3",
+      "name": "Equipo C3",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-030",
+    "stage": "group",
+    "group": "C",
+    "matchday": 2,
+    "kickoff": "2026-06-18T16:00:00-03:00",
+    "venue": "Kansas City",
+    "home": {
+      "code": "C2",
+      "name": "Equipo C2",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "C4",
+      "name": "Equipo C4",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-031",
+    "stage": "group",
+    "group": "D",
+    "matchday": 2,
+    "kickoff": "2026-06-18T19:00:00-03:00",
+    "venue": "Mexico City",
+    "home": {
+      "code": "D1",
+      "name": "Equipo D1",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "D3",
+      "name": "Equipo D3",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-032",
+    "stage": "group",
+    "group": "D",
+    "matchday": 2,
+    "kickoff": "2026-06-18T22:00:00-03:00",
+    "venue": "Dallas",
+    "home": {
+      "code": "D2",
+      "name": "Equipo D2",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "D4",
+      "name": "Equipo D4",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-033",
+    "stage": "group",
+    "group": "E",
+    "matchday": 2,
+    "kickoff": "2026-06-19T13:00:00-03:00",
+    "venue": "San Francisco Bay Area",
+    "home": {
+      "code": "E1",
+      "name": "Equipo E1",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "E3",
+      "name": "Equipo E3",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-034",
+    "stage": "group",
+    "group": "E",
+    "matchday": 2,
+    "kickoff": "2026-06-19T16:00:00-03:00",
+    "venue": "Atlanta",
+    "home": {
+      "code": "E2",
+      "name": "Equipo E2",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "E4",
+      "name": "Equipo E4",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-035",
+    "stage": "group",
+    "group": "F",
+    "matchday": 2,
+    "kickoff": "2026-06-19T19:00:00-03:00",
+    "venue": "New York/New Jersey",
+    "home": {
+      "code": "F1",
+      "name": "Equipo F1",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "F3",
+      "name": "Equipo F3",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-036",
+    "stage": "group",
+    "group": "F",
+    "matchday": 2,
+    "kickoff": "2026-06-19T22:00:00-03:00",
+    "venue": "Toronto",
+    "home": {
+      "code": "F2",
+      "name": "Equipo F2",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "F4",
+      "name": "Equipo F4",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-037",
+    "stage": "group",
+    "group": "G",
+    "matchday": 2,
+    "kickoff": "2026-06-20T13:00:00-03:00",
+    "venue": "Los Angeles",
+    "home": {
+      "code": "G1",
+      "name": "Equipo G1",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "G3",
+      "name": "Equipo G3",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-038",
+    "stage": "group",
+    "group": "G",
+    "matchday": 2,
+    "kickoff": "2026-06-20T16:00:00-03:00",
+    "venue": "Guadalajara",
+    "home": {
+      "code": "G2",
+      "name": "Equipo G2",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "G4",
+      "name": "Equipo G4",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-039",
+    "stage": "group",
+    "group": "H",
+    "matchday": 2,
+    "kickoff": "2026-06-20T19:00:00-03:00",
+    "venue": "Houston",
+    "home": {
+      "code": "H1",
+      "name": "Equipo H1",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "H3",
+      "name": "Equipo H3",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-040",
+    "stage": "group",
+    "group": "H",
+    "matchday": 2,
+    "kickoff": "2026-06-20T22:00:00-03:00",
+    "venue": "Seattle",
+    "home": {
+      "code": "H2",
+      "name": "Equipo H2",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "H4",
+      "name": "Equipo H4",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-041",
+    "stage": "group",
+    "group": "I",
+    "matchday": 2,
+    "kickoff": "2026-06-21T13:00:00-03:00",
+    "venue": "Boston",
+    "home": {
+      "code": "I1",
+      "name": "Equipo I1",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "I3",
+      "name": "Equipo I3",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-042",
+    "stage": "group",
+    "group": "I",
+    "matchday": 2,
+    "kickoff": "2026-06-21T16:00:00-03:00",
+    "venue": "Philadelphia",
+    "home": {
+      "code": "I2",
+      "name": "Equipo I2",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "I4",
+      "name": "Equipo I4",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-043",
+    "stage": "group",
+    "group": "J",
+    "matchday": 2,
+    "kickoff": "2026-06-21T19:00:00-03:00",
+    "venue": "Vancouver",
+    "home": {
+      "code": "J1",
+      "name": "Equipo J1",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "J3",
+      "name": "Equipo J3",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-044",
+    "stage": "group",
+    "group": "J",
+    "matchday": 2,
+    "kickoff": "2026-06-21T22:00:00-03:00",
+    "venue": "Miami",
+    "home": {
+      "code": "J2",
+      "name": "Equipo J2",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "J4",
+      "name": "Equipo J4",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-045",
+    "stage": "group",
+    "group": "K",
+    "matchday": 2,
+    "kickoff": "2026-06-22T13:00:00-03:00",
+    "venue": "Monterrey",
+    "home": {
+      "code": "K1",
+      "name": "Equipo K1",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "K3",
+      "name": "Equipo K3",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-046",
+    "stage": "group",
+    "group": "K",
+    "matchday": 2,
+    "kickoff": "2026-06-22T16:00:00-03:00",
+    "venue": "Kansas City",
+    "home": {
+      "code": "K2",
+      "name": "Equipo K2",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "K4",
+      "name": "Equipo K4",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-047",
+    "stage": "group",
+    "group": "L",
+    "matchday": 2,
+    "kickoff": "2026-06-22T19:00:00-03:00",
+    "venue": "Mexico City",
+    "home": {
+      "code": "L1",
+      "name": "Equipo L1",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "L3",
+      "name": "Equipo L3",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-048",
+    "stage": "group",
+    "group": "L",
+    "matchday": 2,
+    "kickoff": "2026-06-22T22:00:00-03:00",
+    "venue": "Dallas",
+    "home": {
+      "code": "L2",
+      "name": "Equipo L2",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "L4",
+      "name": "Equipo L4",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-049",
+    "stage": "group",
+    "group": "A",
+    "matchday": 3,
+    "kickoff": "2026-06-23T13:00:00-03:00",
+    "venue": "San Francisco Bay Area",
+    "home": {
+      "code": "A4",
+      "name": "Equipo A4",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "A1",
+      "name": "Equipo A1",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-050",
+    "stage": "group",
+    "group": "A",
+    "matchday": 3,
+    "kickoff": "2026-06-23T16:00:00-03:00",
+    "venue": "Atlanta",
+    "home": {
+      "code": "A2",
+      "name": "Equipo A2",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "A3",
+      "name": "Equipo A3",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-051",
+    "stage": "group",
+    "group": "B",
+    "matchday": 3,
+    "kickoff": "2026-06-23T19:00:00-03:00",
+    "venue": "New York/New Jersey",
+    "home": {
+      "code": "B4",
+      "name": "Equipo B4",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "B1",
+      "name": "Equipo B1",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-052",
+    "stage": "group",
+    "group": "B",
+    "matchday": 3,
+    "kickoff": "2026-06-23T22:00:00-03:00",
+    "venue": "Toronto",
+    "home": {
+      "code": "B2",
+      "name": "Equipo B2",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "B3",
+      "name": "Equipo B3",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-053",
+    "stage": "group",
+    "group": "C",
+    "matchday": 3,
+    "kickoff": "2026-06-24T13:00:00-03:00",
+    "venue": "Los Angeles",
+    "home": {
+      "code": "C4",
+      "name": "Equipo C4",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "C1",
+      "name": "Equipo C1",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-054",
+    "stage": "group",
+    "group": "C",
+    "matchday": 3,
+    "kickoff": "2026-06-24T16:00:00-03:00",
+    "venue": "Guadalajara",
+    "home": {
+      "code": "C2",
+      "name": "Equipo C2",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "C3",
+      "name": "Equipo C3",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-055",
+    "stage": "group",
+    "group": "D",
+    "matchday": 3,
+    "kickoff": "2026-06-24T19:00:00-03:00",
+    "venue": "Houston",
+    "home": {
+      "code": "D4",
+      "name": "Equipo D4",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "D1",
+      "name": "Equipo D1",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-056",
+    "stage": "group",
+    "group": "D",
+    "matchday": 3,
+    "kickoff": "2026-06-24T22:00:00-03:00",
+    "venue": "Seattle",
+    "home": {
+      "code": "D2",
+      "name": "Equipo D2",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "D3",
+      "name": "Equipo D3",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-057",
+    "stage": "group",
+    "group": "E",
+    "matchday": 3,
+    "kickoff": "2026-06-25T13:00:00-03:00",
+    "venue": "Boston",
+    "home": {
+      "code": "E4",
+      "name": "Equipo E4",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "E1",
+      "name": "Equipo E1",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-058",
+    "stage": "group",
+    "group": "E",
+    "matchday": 3,
+    "kickoff": "2026-06-25T16:00:00-03:00",
+    "venue": "Philadelphia",
+    "home": {
+      "code": "E2",
+      "name": "Equipo E2",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "E3",
+      "name": "Equipo E3",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-059",
+    "stage": "group",
+    "group": "F",
+    "matchday": 3,
+    "kickoff": "2026-06-25T19:00:00-03:00",
+    "venue": "Vancouver",
+    "home": {
+      "code": "F4",
+      "name": "Equipo F4",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "F1",
+      "name": "Equipo F1",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-060",
+    "stage": "group",
+    "group": "F",
+    "matchday": 3,
+    "kickoff": "2026-06-25T22:00:00-03:00",
+    "venue": "Miami",
+    "home": {
+      "code": "F2",
+      "name": "Equipo F2",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "F3",
+      "name": "Equipo F3",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-061",
+    "stage": "group",
+    "group": "G",
+    "matchday": 3,
+    "kickoff": "2026-06-26T13:00:00-03:00",
+    "venue": "Monterrey",
+    "home": {
+      "code": "G4",
+      "name": "Equipo G4",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "G1",
+      "name": "Equipo G1",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-062",
+    "stage": "group",
+    "group": "G",
+    "matchday": 3,
+    "kickoff": "2026-06-26T16:00:00-03:00",
+    "venue": "Kansas City",
+    "home": {
+      "code": "G2",
+      "name": "Equipo G2",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "G3",
+      "name": "Equipo G3",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-063",
+    "stage": "group",
+    "group": "H",
+    "matchday": 3,
+    "kickoff": "2026-06-26T19:00:00-03:00",
+    "venue": "Mexico City",
+    "home": {
+      "code": "H4",
+      "name": "Equipo H4",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "H1",
+      "name": "Equipo H1",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-064",
+    "stage": "group",
+    "group": "H",
+    "matchday": 3,
+    "kickoff": "2026-06-26T22:00:00-03:00",
+    "venue": "Dallas",
+    "home": {
+      "code": "H2",
+      "name": "Equipo H2",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "H3",
+      "name": "Equipo H3",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-065",
+    "stage": "group",
+    "group": "I",
+    "matchday": 3,
+    "kickoff": "2026-06-27T13:00:00-03:00",
+    "venue": "San Francisco Bay Area",
+    "home": {
+      "code": "I4",
+      "name": "Equipo I4",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "I1",
+      "name": "Equipo I1",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-066",
+    "stage": "group",
+    "group": "I",
+    "matchday": 3,
+    "kickoff": "2026-06-27T16:00:00-03:00",
+    "venue": "Atlanta",
+    "home": {
+      "code": "I2",
+      "name": "Equipo I2",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "I3",
+      "name": "Equipo I3",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-067",
+    "stage": "group",
+    "group": "J",
+    "matchday": 3,
+    "kickoff": "2026-06-27T19:00:00-03:00",
+    "venue": "New York/New Jersey",
+    "home": {
+      "code": "J4",
+      "name": "Equipo J4",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "J1",
+      "name": "Equipo J1",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-068",
+    "stage": "group",
+    "group": "J",
+    "matchday": 3,
+    "kickoff": "2026-06-27T22:00:00-03:00",
+    "venue": "Toronto",
+    "home": {
+      "code": "J2",
+      "name": "Equipo J2",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "J3",
+      "name": "Equipo J3",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-069",
+    "stage": "group",
+    "group": "K",
+    "matchday": 3,
+    "kickoff": "2026-06-28T13:00:00-03:00",
+    "venue": "Los Angeles",
+    "home": {
+      "code": "K4",
+      "name": "Equipo K4",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "K1",
+      "name": "Equipo K1",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-070",
+    "stage": "group",
+    "group": "K",
+    "matchday": 3,
+    "kickoff": "2026-06-28T16:00:00-03:00",
+    "venue": "Guadalajara",
+    "home": {
+      "code": "K2",
+      "name": "Equipo K2",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "K3",
+      "name": "Equipo K3",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "K-r32-01",
+    "stage": "r32",
+    "matchday": null,
+    "kickoff": "2026-06-28T16:00:00-03:00",
+    "venue": "Mexico City",
+    "home": {
+      "code": "r32-01-H",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "r32-01-A",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-071",
+    "stage": "group",
+    "group": "L",
+    "matchday": 3,
+    "kickoff": "2026-06-28T19:00:00-03:00",
+    "venue": "Houston",
+    "home": {
+      "code": "L4",
+      "name": "Equipo L4",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "L1",
+      "name": "Equipo L1",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "K-r32-02",
+    "stage": "r32",
+    "matchday": null,
+    "kickoff": "2026-06-28T19:00:00-03:00",
+    "venue": "Guadalajara",
+    "home": {
+      "code": "r32-02-H",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "r32-02-A",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "M-072",
+    "stage": "group",
+    "group": "L",
+    "matchday": 3,
+    "kickoff": "2026-06-28T22:00:00-03:00",
+    "venue": "Seattle",
+    "home": {
+      "code": "L2",
+      "name": "Equipo L2",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "L3",
+      "name": "Equipo L3",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "K-r32-03",
+    "stage": "r32",
+    "matchday": null,
+    "kickoff": "2026-06-28T22:00:00-03:00",
+    "venue": "Monterrey",
+    "home": {
+      "code": "r32-03-H",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "r32-03-A",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "K-r32-04",
+    "stage": "r32",
+    "matchday": null,
+    "kickoff": "2026-06-29T16:00:00-03:00",
+    "venue": "Toronto",
+    "home": {
+      "code": "r32-04-H",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "r32-04-A",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "K-r32-05",
+    "stage": "r32",
+    "matchday": null,
+    "kickoff": "2026-06-29T19:00:00-03:00",
+    "venue": "Vancouver",
+    "home": {
+      "code": "r32-05-H",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "r32-05-A",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "K-r32-06",
+    "stage": "r32",
+    "matchday": null,
+    "kickoff": "2026-06-29T22:00:00-03:00",
+    "venue": "Atlanta",
+    "home": {
+      "code": "r32-06-H",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "r32-06-A",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "K-r32-07",
+    "stage": "r32",
+    "matchday": null,
+    "kickoff": "2026-06-30T16:00:00-03:00",
+    "venue": "Boston",
+    "home": {
+      "code": "r32-07-H",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "r32-07-A",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "K-r32-08",
+    "stage": "r32",
+    "matchday": null,
+    "kickoff": "2026-06-30T19:00:00-03:00",
+    "venue": "Dallas",
+    "home": {
+      "code": "r32-08-H",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "r32-08-A",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "K-r32-09",
+    "stage": "r32",
+    "matchday": null,
+    "kickoff": "2026-06-30T22:00:00-03:00",
+    "venue": "Houston",
+    "home": {
+      "code": "r32-09-H",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "r32-09-A",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "K-r32-10",
+    "stage": "r32",
+    "matchday": null,
+    "kickoff": "2026-07-01T16:00:00-03:00",
+    "venue": "Kansas City",
+    "home": {
+      "code": "r32-10-H",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "r32-10-A",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "K-r32-11",
+    "stage": "r32",
+    "matchday": null,
+    "kickoff": "2026-07-01T19:00:00-03:00",
+    "venue": "Los Angeles",
+    "home": {
+      "code": "r32-11-H",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "r32-11-A",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "K-r32-12",
+    "stage": "r32",
+    "matchday": null,
+    "kickoff": "2026-07-01T22:00:00-03:00",
+    "venue": "Miami",
+    "home": {
+      "code": "r32-12-H",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "r32-12-A",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "K-r32-13",
+    "stage": "r32",
+    "matchday": null,
+    "kickoff": "2026-07-02T16:00:00-03:00",
+    "venue": "New York/New Jersey",
+    "home": {
+      "code": "r32-13-H",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "r32-13-A",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "K-r32-14",
+    "stage": "r32",
+    "matchday": null,
+    "kickoff": "2026-07-02T19:00:00-03:00",
+    "venue": "Philadelphia",
+    "home": {
+      "code": "r32-14-H",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "r32-14-A",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "K-r32-15",
+    "stage": "r32",
+    "matchday": null,
+    "kickoff": "2026-07-02T22:00:00-03:00",
+    "venue": "San Francisco Bay Area",
+    "home": {
+      "code": "r32-15-H",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "r32-15-A",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "K-r32-16",
+    "stage": "r32",
+    "matchday": null,
+    "kickoff": "2026-07-03T16:00:00-03:00",
+    "venue": "Seattle",
+    "home": {
+      "code": "r32-16-H",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "r32-16-A",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "K-r16-01",
+    "stage": "r16",
+    "matchday": null,
+    "kickoff": "2026-07-04T18:00:00-03:00",
+    "venue": "Mexico City",
+    "home": {
+      "code": "r16-01-H",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "r16-01-A",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "K-r16-02",
+    "stage": "r16",
+    "matchday": null,
+    "kickoff": "2026-07-04T22:00:00-03:00",
+    "venue": "Guadalajara",
+    "home": {
+      "code": "r16-02-H",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "r16-02-A",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "K-r16-03",
+    "stage": "r16",
+    "matchday": null,
+    "kickoff": "2026-07-05T18:00:00-03:00",
+    "venue": "Monterrey",
+    "home": {
+      "code": "r16-03-H",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "r16-03-A",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "K-r16-04",
+    "stage": "r16",
+    "matchday": null,
+    "kickoff": "2026-07-05T22:00:00-03:00",
+    "venue": "Toronto",
+    "home": {
+      "code": "r16-04-H",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "r16-04-A",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "K-r16-05",
+    "stage": "r16",
+    "matchday": null,
+    "kickoff": "2026-07-06T18:00:00-03:00",
+    "venue": "Vancouver",
+    "home": {
+      "code": "r16-05-H",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "r16-05-A",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "K-r16-06",
+    "stage": "r16",
+    "matchday": null,
+    "kickoff": "2026-07-06T22:00:00-03:00",
+    "venue": "Atlanta",
+    "home": {
+      "code": "r16-06-H",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "r16-06-A",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "K-r16-07",
+    "stage": "r16",
+    "matchday": null,
+    "kickoff": "2026-07-07T18:00:00-03:00",
+    "venue": "Boston",
+    "home": {
+      "code": "r16-07-H",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "r16-07-A",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "K-r16-08",
+    "stage": "r16",
+    "matchday": null,
+    "kickoff": "2026-07-07T22:00:00-03:00",
+    "venue": "Dallas",
+    "home": {
+      "code": "r16-08-H",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "r16-08-A",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "K-qf-01",
+    "stage": "qf",
+    "matchday": null,
+    "kickoff": "2026-07-09T18:00:00-03:00",
+    "venue": "Mexico City",
+    "home": {
+      "code": "qf-01-H",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "qf-01-A",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "K-qf-02",
+    "stage": "qf",
+    "matchday": null,
+    "kickoff": "2026-07-09T22:00:00-03:00",
+    "venue": "Guadalajara",
+    "home": {
+      "code": "qf-02-H",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "qf-02-A",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "K-qf-03",
+    "stage": "qf",
+    "matchday": null,
+    "kickoff": "2026-07-11T18:00:00-03:00",
+    "venue": "Monterrey",
+    "home": {
+      "code": "qf-03-H",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "qf-03-A",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "K-qf-04",
+    "stage": "qf",
+    "matchday": null,
+    "kickoff": "2026-07-11T22:00:00-03:00",
+    "venue": "Toronto",
+    "home": {
+      "code": "qf-04-H",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "qf-04-A",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "K-sf-01",
+    "stage": "sf",
+    "matchday": null,
+    "kickoff": "2026-07-14T21:00:00-03:00",
+    "venue": "New York/New Jersey",
+    "home": {
+      "code": "sf-01-H",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "sf-01-A",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "K-sf-02",
+    "stage": "sf",
+    "matchday": null,
+    "kickoff": "2026-07-15T21:00:00-03:00",
+    "venue": "Atlanta",
+    "home": {
+      "code": "sf-02-H",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "sf-02-A",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "K-third-01",
+    "stage": "third",
+    "matchday": null,
+    "kickoff": "2026-07-18T17:00:00-03:00",
+    "venue": "Miami",
+    "home": {
+      "code": "third-01-H",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "third-01-A",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  },
+  {
+    "id": "K-final-01",
+    "stage": "final",
+    "matchday": null,
+    "kickoff": "2026-07-19T16:00:00-03:00",
+    "venue": "New York/New Jersey",
+    "home": {
+      "code": "final-01-H",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "away": {
+      "code": "final-01-A",
+      "name": "Por definir",
+      "flag": "⚽"
+    },
+    "homeScore": null,
+    "awayScore": null,
+    "status": "scheduled",
+    "source": null
+  }
+]

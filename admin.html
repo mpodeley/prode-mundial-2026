@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Admin · Prode Mundial 2026</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛠️</text></svg>" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-emerald-900 text-white" style="font-family: Inter, system-ui, sans-serif" x-data="adminPage()" x-init="init()">
+
+  <header class="sticky top-0 z-30 backdrop-blur bg-slate-950/70 border-b border-white/10">
+    <div class="max-w-5xl mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="flex items-center gap-2">
+        <span class="text-2xl">🛠️</span>
+        <span class="font-bold">Admin · Prode</span>
+      </div>
+      <div class="flex gap-4 text-sm">
+        <a href="./app.html" class="text-emerald-200 hover:text-white">← Volver</a>
+        <button @click="logout" class="text-emerald-200 hover:text-white">Salir</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-4 py-6 space-y-6">
+
+    <div x-show="!ready" class="text-center py-12 text-emerald-200">Cargando…</div>
+    <div x-show="ready && !isAdmin" class="bg-red-900/40 border border-red-500 rounded-xl p-6 text-center">
+      <h2 class="font-bold text-xl mb-2">No tenés acceso</h2>
+      <p>Esta página es solo para administradores. Pedile a alguien que te marque como admin en Firestore.</p>
+    </div>
+
+    <template x-if="ready && isAdmin">
+      <div class="space-y-6">
+
+        <!-- Carga de resultados -->
+        <section class="bg-white/5 border border-white/10 rounded-xl p-4">
+          <h2 class="font-bold text-lg text-amber-300 mb-3">Cargar / corregir resultados</h2>
+
+          <div class="flex flex-wrap gap-2 mb-4 text-sm">
+            <input type="text" x-model="filter" placeholder="Buscar equipo…"
+                   class="flex-1 min-w-[200px] bg-white/10 border border-white/20 rounded px-3 py-2" />
+            <select x-model="statusFilter" class="bg-white/10 border border-white/20 rounded px-3 py-2">
+              <option value="">Todos los estados</option>
+              <option value="scheduled">Programados</option>
+              <option value="live">En vivo</option>
+              <option value="finished">Finalizados</option>
+            </select>
+          </div>
+
+          <div class="space-y-2 max-h-[60vh] overflow-y-auto">
+            <template x-for="m in filteredMatches" :key="m.id">
+              <div class="bg-white/5 hover:bg-white/10 rounded-lg p-3 grid grid-cols-1 sm:grid-cols-[1fr_auto_auto] gap-3 items-center">
+                <div class="text-sm">
+                  <p class="font-semibold"><span x-text="m.home.flag"></span> <span x-text="m.home.name"></span> vs <span x-text="m.away.name"></span> <span x-text="m.away.flag"></span></p>
+                  <p class="text-xs text-emerald-200">
+                    <span x-text="m.stage === 'group' ? 'Grupo ' + m.group : m.stage"></span> ·
+                    <span x-text="formatKickoff(m.kickoff)"></span> ·
+                    <span :class="m.source==='manual' ? 'text-amber-300' : 'text-emerald-300'" x-text="m.source ? '['+m.source+']' : ''"></span>
+                  </p>
+                </div>
+                <div class="flex items-center gap-2">
+                  <input type="number" min="0" max="20" x-model.number="drafts[m.id].home"
+                         class="w-14 text-center bg-white/90 text-gray-900 rounded font-bold py-1" />
+                  <span class="text-emerald-300">·</span>
+                  <input type="number" min="0" max="20" x-model.number="drafts[m.id].away"
+                         class="w-14 text-center bg-white/90 text-gray-900 rounded font-bold py-1" />
+                </div>
+                <div class="flex gap-1">
+                  <select x-model="drafts[m.id].status" class="bg-white/10 border border-white/20 rounded px-2 py-1 text-xs">
+                    <option value="scheduled">Programado</option>
+                    <option value="live">En vivo</option>
+                    <option value="finished">Final</option>
+                  </select>
+                  <button @click="saveMatch(m)" :disabled="busy[m.id]"
+                          class="bg-amber-400 hover:bg-amber-300 text-emerald-950 font-bold rounded px-3 py-1 text-sm disabled:opacity-50">
+                    Guardar
+                  </button>
+                </div>
+                <p x-show="msg[m.id]" class="text-xs sm:col-span-3" :class="msg[m.id].ok ? 'text-emerald-300' : 'text-red-300'" x-text="msg[m.id].text"></p>
+              </div>
+            </template>
+          </div>
+        </section>
+
+        <!-- Usuarios -->
+        <section class="bg-white/5 border border-white/10 rounded-xl p-4">
+          <h2 class="font-bold text-lg text-amber-300 mb-3">Usuarios registrados (<span x-text="users.length"></span>)</h2>
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 text-sm">
+            <template x-for="u in users" :key="u.uid">
+              <div class="bg-white/5 rounded px-3 py-2 flex justify-between items-center">
+                <span x-text="u.nickname"></span>
+                <span x-show="u.isAdmin" class="text-xs text-amber-300">★</span>
+              </div>
+            </template>
+          </div>
+          <p class="text-xs text-emerald-200/70 mt-3">
+            Para promover a alguien a admin, editá <code>users/{uid}</code> en la consola de Firestore y poné <code>isAdmin: true</code>.
+          </p>
+        </section>
+
+      </div>
+    </template>
+  </main>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-app.js";
+    import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-auth.js";
+    import { getFirestore, collection, doc, getDoc, getDocs, onSnapshot, setDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore.js";
+    import { firebaseConfig } from "./assets/firebase-config.js";
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+    const db = getFirestore(app);
+
+    const fmt = new Intl.DateTimeFormat("es-AR", {
+      weekday: "short", day: "2-digit", month: "short", hour: "2-digit", minute: "2-digit",
+      timeZone: "America/Argentina/Buenos_Aires"
+    });
+
+    window.adminPage = function () {
+      return {
+        ready: false,
+        isAdmin: false,
+        matches: [],
+        users: [],
+        drafts: {},
+        msg: {},
+        busy: {},
+        filter: "",
+        statusFilter: "",
+
+        init() {
+          onAuthStateChanged(auth, async (u) => {
+            if (!u) { window.location.replace("./index.html"); return; }
+            const snap = await getDoc(doc(db, "users", u.uid));
+            this.isAdmin = !!snap.data()?.isAdmin;
+            this.ready = true;
+            if (this.isAdmin) {
+              this.subscribeMatches();
+              this.loadUsers();
+            }
+          });
+        },
+
+        subscribeMatches() {
+          onSnapshot(collection(db, "matches"), (snap) => {
+            this.matches = snap.docs.map(d => {
+              const x = d.data();
+              return { id: d.id, ...x, kickoff: x.kickoff?.toDate ? x.kickoff.toDate() : new Date(x.kickoff) };
+            }).sort((a, b) => a.kickoff - b.kickoff);
+            for (const m of this.matches) {
+              if (!this.drafts[m.id]) {
+                this.drafts[m.id] = { home: m.homeScore, away: m.awayScore, status: m.status || "scheduled" };
+              }
+            }
+          });
+        },
+
+        async loadUsers() {
+          const snap = await getDocs(collection(db, "users"));
+          this.users = snap.docs.map(d => ({ uid: d.id, ...d.data() }))
+            .sort((a, b) => (a.nickname || "").localeCompare(b.nickname || ""));
+        },
+
+        get filteredMatches() {
+          const f = this.filter.toLowerCase().trim();
+          return this.matches.filter(m => {
+            if (this.statusFilter && m.status !== this.statusFilter) return false;
+            if (!f) return true;
+            return (m.home.name + " " + m.away.name + " " + (m.group || "")).toLowerCase().includes(f);
+          });
+        },
+
+        formatKickoff(d) { return d ? fmt.format(d instanceof Date ? d : new Date(d)) : ""; },
+
+        async saveMatch(m) {
+          const draft = this.drafts[m.id];
+          if (draft.home == null || draft.away == null) {
+            this.msg[m.id] = { ok: false, text: "Cargá ambos goles." }; return;
+          }
+          this.busy[m.id] = true;
+          try {
+            await setDoc(doc(db, "matches", m.id), {
+              homeScore: Number(draft.home),
+              awayScore: Number(draft.away),
+              status: draft.status,
+              source: "manual",
+              lastUpdated: serverTimestamp()
+            }, { merge: true });
+            this.msg[m.id] = { ok: true, text: "Guardado ✓" };
+            setTimeout(() => { delete this.msg[m.id]; }, 1500);
+          } catch (e) {
+            console.error(e);
+            this.msg[m.id] = { ok: false, text: "Error: " + e.message };
+          } finally {
+            this.busy[m.id] = false;
+          }
+        },
+
+        async logout() { await signOut(auth); window.location.replace("./index.html"); }
+      };
+    };
+  </script>
+</body>
+</html>
