@@ -8,19 +8,21 @@ import {
 } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore.js";
 import { firebaseConfig, AUTH_EMAIL_DOMAIN } from "./firebase-config.js";
 
-const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
-const db = getFirestore(app);
+const FIRST_KICKOFF_ISO = "2026-06-11T20:00:00-05:00";
 
-const FIRST_KICKOFF_ISO = "2026-06-11T20:00:00-05:00"; // Estadio Azteca, hora local CDMX
+export const CONFIG_OK = firebaseConfig.apiKey && firebaseConfig.apiKey !== "REEMPLAZAR";
+
+let app, auth, db;
+if (CONFIG_OK) {
+  app = initializeApp(firebaseConfig);
+  auth = getAuth(app);
+  db = getFirestore(app);
+}
 
 function normalizeNick(raw) {
   return (raw || "").toString().trim().toLowerCase().replace(/[^a-z0-9_]/g, "");
 }
-
-function nickToEmail(nick) {
-  return `${nick}@${AUTH_EMAIL_DOMAIN}`;
-}
+function nickToEmail(nick) { return `${nick}@${AUTH_EMAIL_DOMAIN}`; }
 
 function friendlyError(code) {
   const map = {
@@ -30,12 +32,14 @@ function friendlyError(code) {
     "auth/email-already-in-use": "Ese nick ya está en uso. Probá entrar.",
     "auth/weak-password": "El PIN tiene que tener al menos 4 caracteres.",
     "auth/too-many-requests": "Demasiados intentos. Esperá un momento.",
-    "auth/network-request-failed": "Sin conexión. Probá de nuevo."
+    "auth/network-request-failed": "Sin conexión. Probá de nuevo.",
+    "auth/api-key-not-valid": "Firebase no está configurado todavía (avisale al admin).",
+    "auth/configuration-not-found": "Auth no está habilitado en Firebase Console."
   };
-  return map[code] || "Error inesperado. Probá de nuevo.";
+  return map[code] || `Error: ${code || "desconocido"}`;
 }
 
-window.loginPage = function () {
+function loginPageData() {
   return {
     mode: "login",
     nick: "",
@@ -43,9 +47,14 @@ window.loginPage = function () {
     busy: false,
     error: "",
     countdown: "",
+    configOk: CONFIG_OK,
     _timer: null,
 
     init() {
+      if (!CONFIG_OK) {
+        this.error = "Firebase no está configurado. Editá assets/firebase-config.js con los valores de tu proyecto.";
+        return;
+      }
       onAuthStateChanged(auth, (user) => {
         if (user) window.location.replace("./app.html");
       });
@@ -66,6 +75,7 @@ window.loginPage = function () {
 
     async submit() {
       this.error = "";
+      if (!CONFIG_OK) { this.error = "Firebase no configurado todavía."; return; }
       const nick = normalizeNick(this.nick);
       if (!nick || nick.length < 2) { this.error = "El nick necesita al menos 2 caracteres válidos."; return; }
       if (!this.pin || this.pin.length < 4) { this.error = "El PIN tiene que tener al menos 4 caracteres."; return; }
@@ -79,9 +89,7 @@ window.loginPage = function () {
           if (taken.exists()) throw { code: "auth/email-already-in-use" };
           const cred = await createUserWithEmailAndPassword(auth, nickToEmail(nick), this.pin);
           await setDoc(doc(db, "users", cred.user.uid), {
-            nickname: nick,
-            isAdmin: false,
-            createdAt: serverTimestamp()
+            nickname: nick, isAdmin: false, createdAt: serverTimestamp()
           });
           await setDoc(doc(db, "nicknames", nick), { uid: cred.user.uid });
         }
@@ -94,7 +102,18 @@ window.loginPage = function () {
       }
     }
   };
-};
+}
 
-// Helpers para el resto de la app
+// Registrar el componente Alpine. Usamos alpine:init si Alpine todavía no inició,
+// o llamamos Alpine.data() directamente si ya está disponible. Y también colgamos
+// window.loginPage para compatibilidad con x-data="loginPage()".
+window.loginPage = loginPageData;
+if (window.Alpine) {
+  window.Alpine.data("loginPage", loginPageData);
+} else {
+  document.addEventListener("alpine:init", () => {
+    window.Alpine.data("loginPage", loginPageData);
+  });
+}
+
 export { app, auth, db, signOut, normalizeNick, nickToEmail };

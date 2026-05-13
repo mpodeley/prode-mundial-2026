@@ -8,6 +8,12 @@ import {
 import { firebaseConfig } from "./firebase-config.js";
 import { score, isExact, isWinnerOnly, DEFAULT_RULES } from "./scoring.js";
 
+const CONFIG_OK = firebaseConfig.apiKey && firebaseConfig.apiKey !== "REEMPLAZAR";
+if (!CONFIG_OK) {
+  // No tiene sentido seguir en app.html sin Firebase configurado
+  window.location.replace("./index.html");
+}
+
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
@@ -28,7 +34,7 @@ const fmt = new Intl.DateTimeFormat("es-AR", {
   timeZone: "America/Argentina/Buenos_Aires"
 });
 
-window.prodeApp = function () {
+function prodeAppData() {
   return {
     loading: true,
     tab: "fixtures",
@@ -210,4 +216,13 @@ window.prodeApp = function () {
       window.location.replace("./index.html");
     }
   };
-};
+}
+
+window.prodeApp = prodeAppData;
+if (window.Alpine) {
+  window.Alpine.data("prodeApp", prodeAppData);
+} else {
+  document.addEventListener("alpine:init", () => {
+    window.Alpine.data("prodeApp", prodeAppData);
+  });
+}
