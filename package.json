@@ -1,0 +1,14 @@
+{
+  "name": "prode-mundial-2026",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "seed": "node scripts/seed-fixtures.mjs",
+    "fetch-results": "node scripts/fetch-results.mjs",
+    "generate-fixtures": "node scripts/generate-fixtures.mjs"
+  },
+  "dependencies": {
+    "firebase-admin": "^13.0.0"
+  }
+}
