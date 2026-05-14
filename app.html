@@ -89,8 +89,8 @@
 
                 <div class="grid grid-cols-[1fr_auto_1fr] items-center gap-2 sm:gap-4">
                   <div class="flex items-center gap-2 justify-end text-right">
-                    <span class="font-semibold text-sm sm:text-base" x-text="m.home.name"></span>
-                    <span x-html="flagHtml(m.home)"></span>
+                    <span class="font-semibold text-sm sm:text-base" x-text="effectiveTeam(m, 'home').name"></span>
+                    <span x-html="flagHtml(effectiveTeam(m, 'home'))"></span>
                   </div>
 
                   <div class="bg-emerald-950/40 rounded-lg px-2 py-1.5">
@@ -119,8 +119,8 @@
                   </div>
 
                   <div class="flex items-center gap-2">
-                    <span x-html="flagHtml(m.away)"></span>
-                    <span class="font-semibold text-sm sm:text-base" x-text="m.away.name"></span>
+                    <span x-html="flagHtml(effectiveTeam(m, 'away'))"></span>
+                    <span class="font-semibold text-sm sm:text-base" x-text="effectiveTeam(m, 'away').name"></span>
                   </div>
                 </div>
 
@@ -187,31 +187,50 @@
 
     <!-- LLAVES (BRACKET) TAB -->
     <section x-show="!loading && tab==='bracket'" x-cloak class="space-y-6">
-      <p class="text-emerald-200/80 text-sm">Árbol de eliminatorias. Los emparejamientos se completan al cerrar la fase de grupos.</p>
+      <p class="text-emerald-200/80 text-sm">
+        Tocá el equipo que va a ganar y se propaga al siguiente partido.
+        Para cargar marcador exacto, usá el ✏️ que te lleva al fixture.
+      </p>
 
       <div class="overflow-x-auto -mx-4 px-4">
         <div class="flex gap-3 sm:gap-4 pb-4" style="min-width: 1100px;">
           <template x-for="col in bracketColumns" :key="col.stage">
-            <div class="flex-1 flex flex-col justify-around min-w-[170px]">
+            <div class="flex-1 flex flex-col justify-around min-w-[180px]">
               <h3 class="text-center text-emerald-300 font-bold text-xs sm:text-sm mb-2 uppercase tracking-wider" x-text="col.label"></h3>
               <template x-for="m in col.matches" :key="m.id">
-                <div @click="goToMatch(m.id)"
-                     class="bg-white/5 hover:bg-white/10 border border-white/10 rounded-lg p-2 my-1.5 cursor-pointer transition text-xs">
-                  <div class="flex justify-between items-center py-0.5 gap-1">
+                <div class="bg-white/5 border border-white/10 rounded-lg my-1.5 text-xs overflow-hidden">
+                  <!-- Equipo HOME -->
+                  <div @click="pickInBracket(m, 'home')"
+                       :class="getBracketPick(m) === 'home'
+                         ? 'bg-amber-400/30 border-l-4 border-amber-400'
+                         : getBracketPick(m) === 'away' ? 'opacity-40' : 'hover:bg-white/10 border-l-4 border-transparent'"
+                       class="flex justify-between items-center py-1.5 px-2 gap-1 cursor-pointer transition">
                     <span class="flex items-center gap-1 truncate">
-                      <span x-html="flagHtml(m.home, 'small')"></span>
-                      <span class="truncate" x-text="m.home.name"></span>
+                      <span x-html="flagHtml(effectiveTeam(m, 'home'), 'small')"></span>
+                      <span class="truncate" x-text="effectiveTeam(m, 'home').name"></span>
                     </span>
                     <span class="font-bold tabular-nums" x-text="m.homeScore ?? '–'"></span>
                   </div>
-                  <div class="border-t border-white/10 my-0.5"></div>
-                  <div class="flex justify-between items-center py-0.5 gap-1">
+                  <!-- Equipo AWAY -->
+                  <div @click="pickInBracket(m, 'away')"
+                       :class="getBracketPick(m) === 'away'
+                         ? 'bg-amber-400/30 border-l-4 border-amber-400'
+                         : getBracketPick(m) === 'home' ? 'opacity-40' : 'hover:bg-white/10 border-l-4 border-transparent'"
+                       class="flex justify-between items-center py-1.5 px-2 gap-1 cursor-pointer transition border-t border-white/10">
                     <span class="flex items-center gap-1 truncate">
-                      <span x-html="flagHtml(m.away, 'small')"></span>
-                      <span class="truncate" x-text="m.away.name"></span>
+                      <span x-html="flagHtml(effectiveTeam(m, 'away'), 'small')"></span>
+                      <span class="truncate" x-text="effectiveTeam(m, 'away').name"></span>
                     </span>
                     <span class="font-bold tabular-nums" x-text="m.awayScore ?? '–'"></span>
                   </div>
+                  <!-- Link a marcador -->
+                  <div class="flex justify-between items-center px-2 py-0.5 bg-black/20 text-[10px] text-emerald-300/70">
+                    <span x-text="formatKickoff(m.kickoff).split(',')[0]" class="truncate"></span>
+                    <button @click.stop="goToMatch(m.id)" class="hover:text-amber-300" title="Ir al marcador">✏️</button>
+                  </div>
+                  <p x-show="saveStatus[m.id]" class="text-[10px] px-2 py-0.5"
+                     :class="saveStatus[m.id].ok ? 'text-emerald-300 bg-emerald-900/30' : 'text-red-300 bg-red-900/30'"
+                     x-text="saveStatus[m.id].msg"></p>
                 </div>
               </template>
             </div>
@@ -224,18 +243,22 @@
         <div class="bg-white/5 border border-white/10 rounded-xl p-3">
           <h4 class="text-emerald-300 font-bold text-sm mb-2 text-center">🥉 Tercer puesto</h4>
           <template x-if="thirdMatch">
-            <div @click="goToMatch(thirdMatch.id)" class="cursor-pointer hover:bg-white/5 rounded p-1">
-              <div class="flex justify-between items-center py-1">
+            <div class="text-xs">
+              <div @click="pickInBracket(thirdMatch, 'home')"
+                   :class="getBracketPick(thirdMatch) === 'home' ? 'bg-amber-400/30 border-l-4 border-amber-400' : getBracketPick(thirdMatch) === 'away' ? 'opacity-40' : 'hover:bg-white/10 border-l-4 border-transparent'"
+                   class="flex justify-between items-center py-1.5 px-2 cursor-pointer rounded transition">
                 <span class="flex items-center gap-2 truncate">
-                  <span x-html="flagHtml(thirdMatch.home)"></span>
-                  <span x-text="thirdMatch.home.name"></span>
+                  <span x-html="flagHtml(effectiveTeam(thirdMatch, 'home'))"></span>
+                  <span x-text="effectiveTeam(thirdMatch, 'home').name"></span>
                 </span>
                 <span class="font-bold" x-text="thirdMatch.homeScore ?? '–'"></span>
               </div>
-              <div class="flex justify-between items-center py-1 border-t border-white/10">
+              <div @click="pickInBracket(thirdMatch, 'away')"
+                   :class="getBracketPick(thirdMatch) === 'away' ? 'bg-amber-400/30 border-l-4 border-amber-400' : getBracketPick(thirdMatch) === 'home' ? 'opacity-40' : 'hover:bg-white/10 border-l-4 border-transparent'"
+                   class="flex justify-between items-center py-1.5 px-2 cursor-pointer rounded transition border-t border-white/10">
                 <span class="flex items-center gap-2 truncate">
-                  <span x-html="flagHtml(thirdMatch.away)"></span>
-                  <span x-text="thirdMatch.away.name"></span>
+                  <span x-html="flagHtml(effectiveTeam(thirdMatch, 'away'))"></span>
+                  <span x-text="effectiveTeam(thirdMatch, 'away').name"></span>
                 </span>
                 <span class="font-bold" x-text="thirdMatch.awayScore ?? '–'"></span>
               </div>
@@ -245,14 +268,14 @@
 
         <div class="bg-gradient-to-br from-amber-500/20 to-amber-700/10 border border-amber-400/40 rounded-xl p-3">
           <h4 class="text-amber-300 font-bold text-sm mb-2 text-center">🏆 Campeón</h4>
-          <template x-if="champion">
+          <template x-if="champion && champion.iso">
             <div class="text-center">
-              <span class="text-4xl" x-html="flagHtml(champion, 'big')"></span>
-              <p class="font-bold text-amber-200 text-lg" x-text="champion.name"></p>
+              <span x-html="flagHtml(champion, 'big')"></span>
+              <p class="font-bold text-amber-200 text-lg mt-1" x-text="champion.name"></p>
             </div>
           </template>
-          <template x-if="!champion">
-            <p class="text-center text-amber-200/60 text-sm py-4">Por definir</p>
+          <template x-if="!champion || !champion.iso">
+            <p class="text-center text-amber-200/60 text-sm py-6">Por definir</p>
           </template>
         </div>
       </div>

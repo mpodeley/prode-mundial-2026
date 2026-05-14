@@ -129,8 +129,9 @@ function prodeAppData() {
     },
 
     canPredict(m) {
-      // Bloqueamos pronósticos en partidos con equipos placeholder
-      return !!(m.home?.iso && m.away?.iso);
+      // Bloqueamos pronósticos hasta que los equipos efectivos estén resueltos
+      // (directamente asignados, o derivados de mi pronóstico de la ronda anterior).
+      return !!(this.effectiveTeam(m, 'home').iso && this.effectiveTeam(m, 'away').iso);
     },
 
     formatKickoff(d) {
@@ -289,10 +290,83 @@ function prodeAppData() {
 
     get champion() {
       const f = this.matches.find(m => m.stage === "final");
-      if (!f || f.status !== "finished" || f.homeScore == null) return null;
-      if (f.homeScore > f.awayScore) return f.home;
-      if (f.awayScore > f.homeScore) return f.away;
-      return null; // empate sin definir (no debería pasar en final)
+      if (!f) return null;
+      // 1) Si la final terminó → campeón real
+      if (f.status === "finished" && f.homeScore != null && f.awayScore != null) {
+        if (f.homeScore > f.awayScore) return this.effectiveTeam(f, 'home');
+        if (f.awayScore > f.homeScore) return this.effectiveTeam(f, 'away');
+      }
+      // 2) Sino, usar mi pronóstico de la final
+      const side = this._winnerOf(f);
+      if (!side) return null;
+      return this.effectiveTeam(f, side);
+    },
+
+    // Devuelve 'home' | 'away' | null según el resultado real o mi pronóstico
+    _winnerOf(match) {
+      if (!match) return null;
+      if (match.status === "finished" && match.homeScore != null && match.awayScore != null) {
+        if (match.homeScore > match.awayScore) return 'home';
+        if (match.awayScore > match.homeScore) return 'away';
+        return null;
+      }
+      const pred = this.myPredictions[match.id];
+      if (!pred) return null;
+      if (pred.type === 'winner') return pred.winner !== 'draw' ? pred.winner : null;
+      if (Number.isInteger(pred.home) && Number.isInteger(pred.away)) {
+        if (pred.home > pred.away) return 'home';
+        if (pred.away > pred.home) return 'away';
+      }
+      return null;
+    },
+
+    // Resuelve el equipo "efectivo" para un lado de un partido, propagando ganadores
+    effectiveTeam(m, side) {
+      if (!m) return { code: '?', iso: null, name: 'Por definir' };
+      const direct = m[side];
+      if (direct?.iso) return direct;
+      if (!Array.isArray(m.sources) || m.sources.length < 2) {
+        return { code: '?', iso: null, name: 'Por definir' };
+      }
+      const parentId = side === 'home' ? m.sources[0] : m.sources[1];
+      const parent = this.matches.find(x => x.id === parentId);
+      if (!parent) return { code: '?', iso: null, name: 'Por definir' };
+
+      const winnerSide = this._winnerOf(parent);
+      if (!winnerSide) return { code: '?', iso: null, name: 'Por definir' };
+
+      // El 3er puesto recibe a los PERDEDORES de las semis
+      const targetSide = m.stage === 'third'
+        ? (winnerSide === 'home' ? 'away' : 'home')
+        : winnerSide;
+
+      return this.effectiveTeam(parent, targetSide);
+    },
+
+    // Pronóstico desde el bracket: solo ganador.
+    // Si los equipos efectivos no están resueltos, no se puede picar.
+    async pickInBracket(m, side) {
+      if (!this.isOpen(m)) return;
+      const team = this.effectiveTeam(m, side);
+      if (!team.iso) {
+        this.saveStatus[m.id] = { ok: false, msg: "Definí primero el partido anterior." };
+        setTimeout(() => { delete this.saveStatus[m.id]; }, 1800);
+        return;
+      }
+      this.myPredictions[m.id] = { type: 'winner', winner: side };
+      await this._save(m, { type: 'winner', winner: side });
+    },
+
+    // Indicador visual de qué lado tengo elegido (ganador) en cada partido
+    getBracketPick(m) {
+      const p = this.myPredictions[m.id];
+      if (!p) return null;
+      if (p.type === 'winner') return p.winner !== 'draw' ? p.winner : null;
+      if (Number.isInteger(p.home) && Number.isInteger(p.away)) {
+        if (p.home > p.away) return 'home';
+        if (p.away > p.home) return 'away';
+      }
+      return null;
     },
 
     goToMatch(id) {
