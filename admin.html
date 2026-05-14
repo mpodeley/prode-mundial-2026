@@ -8,6 +8,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/style.css" />
+  <style>[x-cloak] { display: none !important; }</style>
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body class="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-emerald-900 text-white" style="font-family: Inter, system-ui, sans-serif" x-data="adminPage()" x-init="init()">
@@ -55,7 +56,13 @@
             <template x-for="m in filteredMatches" :key="m.id">
               <div class="bg-white/5 hover:bg-white/10 rounded-lg p-3 grid grid-cols-1 sm:grid-cols-[1fr_auto_auto] gap-3 items-center">
                 <div class="text-sm">
-                  <p class="font-semibold"><span x-text="m.home.flag"></span> <span x-text="m.home.name"></span> vs <span x-text="m.away.name"></span> <span x-text="m.away.flag"></span></p>
+                  <p class="font-semibold flex items-center gap-1.5 flex-wrap">
+                    <span x-html="flagHtml(m.home)"></span>
+                    <span x-text="m.home.name"></span>
+                    <span class="text-emerald-400 mx-1">vs</span>
+                    <span x-text="m.away.name"></span>
+                    <span x-html="flagHtml(m.away)"></span>
+                  </p>
                   <p class="text-xs text-emerald-200">
                     <span x-text="m.stage === 'group' ? 'Grupo ' + m.group : m.stage"></span> ·
                     <span x-text="formatKickoff(m.kickoff)"></span> ·
@@ -176,6 +183,14 @@
         },
 
         formatKickoff(d) { return d ? fmt.format(d instanceof Date ? d : new Date(d)) : ""; },
+
+        flagHtml(team) {
+          if (!team || !team.iso) {
+            return `<span class="inline-block text-xs bg-white/10 text-white/60 rounded px-1">?</span>`;
+          }
+          const safe = String(team.iso).replace(/[^a-z0-9-]/gi, "");
+          return `<img src="https://flagcdn.com/w40/${safe}.png" alt="" class="h-4 w-6 object-cover rounded inline-block" loading="lazy" />`;
+        },
 
         async saveMatch(m) {
           const draft = this.drafts[m.id];

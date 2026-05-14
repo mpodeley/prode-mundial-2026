@@ -8,13 +8,13 @@
     "venue": "San Francisco Bay Area",
     "home": {
       "code": "MEX",
-      "name": "México",
-      "flag": "🇲🇽"
+      "iso": "mx",
+      "name": "México"
     },
     "away": {
       "code": "RSA",
-      "name": "Sudáfrica",
-      "flag": "🇿🇦"
+      "iso": "za",
+      "name": "Sudáfrica"
     },
     "homeScore": null,
     "awayScore": null,
@@ -30,13 +30,13 @@
     "venue": "Atlanta",
     "home": {
       "code": "KOR",
-      "name": "Corea del Sur",
-      "flag": "🇰🇷"
+      "iso": "kr",
+      "name": "Corea del Sur"
     },
     "away": {
       "code": "CZE",
-      "name": "Chequia",
-      "flag": "🇨🇿"
+      "iso": "cz",
+      "name": "Chequia"
     },
     "homeScore": null,
     "awayScore": null,
@@ -52,13 +52,13 @@
     "venue": "Nueva York/Nueva Jersey",
     "home": {
       "code": "CAN",
-      "name": "Canadá",
-      "flag": "🇨🇦"
+      "iso": "ca",
+      "name": "Canadá"
     },
     "away": {
       "code": "BIH",
-      "name": "Bosnia y H.",
-      "flag": "🇧🇦"
+      "iso": "ba",
+      "name": "Bosnia y H."
     },
     "homeScore": null,
     "awayScore": null,
@@ -74,13 +74,13 @@
     "venue": "Toronto",
     "home": {
       "code": "QAT",
-      "name": "Qatar",
-      "flag": "🇶🇦"
+      "iso": "qa",
+      "name": "Qatar"
     },
     "away": {
       "code": "SUI",
-      "name": "Suiza",
-      "flag": "🇨🇭"
+      "iso": "ch",
+      "name": "Suiza"
     },
     "homeScore": null,
     "awayScore": null,
@@ -96,13 +96,13 @@
     "venue": "Los Ángeles",
     "home": {
       "code": "BRA",
-      "name": "Brasil",
-      "flag": "🇧🇷"
+      "iso": "br",
+      "name": "Brasil"
     },
     "away": {
       "code": "MAR",
-      "name": "Marruecos",
-      "flag": "🇲🇦"
+      "iso": "ma",
+      "name": "Marruecos"
     },
     "homeScore": null,
     "awayScore": null,
@@ -118,13 +118,13 @@
     "venue": "Guadalajara",
     "home": {
       "code": "HAI",
-      "name": "Haití",
-      "flag": "🇭🇹"
+      "iso": "ht",
+      "name": "Haití"
     },
     "away": {
       "code": "SCO",
-      "name": "Escocia",
-      "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿"
+      "iso": "gb-sct",
+      "name": "Escocia"
     },
     "homeScore": null,
     "awayScore": null,
@@ -140,13 +140,13 @@
     "venue": "Houston",
     "home": {
       "code": "USA",
-      "name": "Estados Unidos",
-      "flag": "🇺🇸"
+      "iso": "us",
+      "name": "Estados Unidos"
     },
     "away": {
       "code": "PAR",
-      "name": "Paraguay",
-      "flag": "🇵🇾"
+      "iso": "py",
+      "name": "Paraguay"
     },
     "homeScore": null,
     "awayScore": null,
@@ -162,13 +162,13 @@
     "venue": "Seattle",
     "home": {
       "code": "AUS",
-      "name": "Australia",
-      "flag": "🇦🇺"
+      "iso": "au",
+      "name": "Australia"
     },
     "away": {
       "code": "TUR",
-      "name": "Turquía",
-      "flag": "🇹🇷"
+      "iso": "tr",
+      "name": "Turquía"
     },
     "homeScore": null,
     "awayScore": null,
@@ -184,13 +184,13 @@
     "venue": "Boston",
     "home": {
       "code": "GER",
-      "name": "Alemania",
-      "flag": "🇩🇪"
+      "iso": "de",
+      "name": "Alemania"
     },
     "away": {
       "code": "CUW",
-      "name": "Curazao",
-      "flag": "🇨🇼"
+      "iso": "cw",
+      "name": "Curazao"
     },
     "homeScore": null,
     "awayScore": null,
@@ -206,13 +206,13 @@
     "venue": "Philadelphia",
     "home": {
       "code": "CIV",
-      "name": "Costa de Marfil",
-      "flag": "🇨🇮"
+      "iso": "ci",
+      "name": "Costa de Marfil"
     },
     "away": {
       "code": "ECU",
-      "name": "Ecuador",
-      "flag": "🇪🇨"
+      "iso": "ec",
+      "name": "Ecuador"
     },
     "homeScore": null,
     "awayScore": null,
@@ -228,13 +228,13 @@
     "venue": "Vancouver",
     "home": {
       "code": "NED",
-      "name": "Países Bajos",
-      "flag": "🇳🇱"
+      "iso": "nl",
+      "name": "Países Bajos"
     },
     "away": {
       "code": "JPN",
-      "name": "Japón",
-      "flag": "🇯🇵"
+      "iso": "jp",
+      "name": "Japón"
     },
     "homeScore": null,
     "awayScore": null,
@@ -250,13 +250,13 @@
     "venue": "Miami",
     "home": {
       "code": "SWE",
-      "name": "Suecia",
-      "flag": "🇸🇪"
+      "iso": "se",
+      "name": "Suecia"
     },
     "away": {
       "code": "TUN",
-      "name": "Túnez",
-      "flag": "🇹🇳"
+      "iso": "tn",
+      "name": "Túnez"
     },
     "homeScore": null,
     "awayScore": null,
@@ -272,13 +272,13 @@
     "venue": "Monterrey",
     "home": {
       "code": "BEL",
-      "name": "Bélgica",
-      "flag": "🇧🇪"
+      "iso": "be",
+      "name": "Bélgica"
     },
     "away": {
       "code": "EGY",
-      "name": "Egipto",
-      "flag": "🇪🇬"
+      "iso": "eg",
+      "name": "Egipto"
     },
     "homeScore": null,
     "awayScore": null,
@@ -294,13 +294,13 @@
     "venue": "Kansas City",
     "home": {
       "code": "IRN",
-      "name": "Irán",
-      "flag": "🇮🇷"
+      "iso": "ir",
+      "name": "Irán"
     },
     "away": {
       "code": "NZL",
-      "name": "Nueva Zelanda",
-      "flag": "🇳🇿"
+      "iso": "nz",
+      "name": "Nueva Zelanda"
     },
     "homeScore": null,
     "awayScore": null,
@@ -316,13 +316,13 @@
     "venue": "Ciudad de México",
     "home": {
       "code": "ESP",
-      "name": "España",
-      "flag": "🇪🇸"
+      "iso": "es",
+      "name": "España"
     },
     "away": {
       "code": "CPV",
-      "name": "Cabo Verde",
-      "flag": "🇨🇻"
+      "iso": "cv",
+      "name": "Cabo Verde"
     },
     "homeScore": null,
     "awayScore": null,
@@ -338,13 +338,13 @@
     "venue": "Dallas",
     "home": {
       "code": "KSA",
-      "name": "Arabia Saudita",
-      "flag": "🇸🇦"
+      "iso": "sa",
+      "name": "Arabia Saudita"
     },
     "away": {
       "code": "URU",
-      "name": "Uruguay",
-      "flag": "🇺🇾"
+      "iso": "uy",
+      "name": "Uruguay"
     },
     "homeScore": null,
     "awayScore": null,
@@ -360,13 +360,13 @@
     "venue": "San Francisco Bay Area",
     "home": {
       "code": "FRA",
-      "name": "Francia",
-      "flag": "🇫🇷"
+      "iso": "fr",
+      "name": "Francia"
     },
     "away": {
       "code": "SEN",
-      "name": "Senegal",
-      "flag": "🇸🇳"
+      "iso": "sn",
+      "name": "Senegal"
     },
     "homeScore": null,
     "awayScore": null,
@@ -382,13 +382,13 @@
     "venue": "Atlanta",
     "home": {
       "code": "IRQ",
-      "name": "Irak",
-      "flag": "🇮🇶"
+      "iso": "iq",
+      "name": "Irak"
     },
     "away": {
       "code": "NOR",
-      "name": "Noruega",
-      "flag": "🇳🇴"
+      "iso": "no",
+      "name": "Noruega"
     },
     "homeScore": null,
     "awayScore": null,
@@ -404,13 +404,13 @@
     "venue": "Nueva York/Nueva Jersey",
     "home": {
       "code": "ARG",
-      "name": "Argentina",
-      "flag": "🇦🇷"
+      "iso": "ar",
+      "name": "Argentina"
     },
     "away": {
       "code": "ALG",
-      "name": "Argelia",
-      "flag": "🇩🇿"
+      "iso": "dz",
+      "name": "Argelia"
     },
     "homeScore": null,
     "awayScore": null,
@@ -426,13 +426,13 @@
     "venue": "Toronto",
     "home": {
       "code": "AUT",
-      "name": "Austria",
-      "flag": "🇦🇹"
+      "iso": "at",
+      "name": "Austria"
     },
     "away": {
       "code": "JOR",
-      "name": "Jordania",
-      "flag": "🇯🇴"
+      "iso": "jo",
+      "name": "Jordania"
     },
     "homeScore": null,
     "awayScore": null,
@@ -448,13 +448,13 @@
     "venue": "Los Ángeles",
     "home": {
       "code": "POR",
-      "name": "Portugal",
-      "flag": "🇵🇹"
+      "iso": "pt",
+      "name": "Portugal"
     },
     "away": {
       "code": "COD",
-      "name": "RD del Congo",
-      "flag": "🇨🇩"
+      "iso": "cd",
+      "name": "RD del Congo"
     },
     "homeScore": null,
     "awayScore": null,
@@ -470,13 +470,13 @@
     "venue": "Guadalajara",
     "home": {
       "code": "UZB",
-      "name": "Uzbekistán",
-      "flag": "🇺🇿"
+      "iso": "uz",
+      "name": "Uzbekistán"
     },
     "away": {
       "code": "COL",
-      "name": "Colombia",
-      "flag": "🇨🇴"
+      "iso": "co",
+      "name": "Colombia"
     },
     "homeScore": null,
     "awayScore": null,
@@ -492,13 +492,13 @@
     "venue": "Houston",
     "home": {
       "code": "ENG",
-      "name": "Inglaterra",
-      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
+      "iso": "gb-eng",
+      "name": "Inglaterra"
     },
     "away": {
       "code": "CRO",
-      "name": "Croacia",
-      "flag": "🇭🇷"
+      "iso": "hr",
+      "name": "Croacia"
     },
     "homeScore": null,
     "awayScore": null,
@@ -514,13 +514,13 @@
     "venue": "Seattle",
     "home": {
       "code": "GHA",
-      "name": "Ghana",
-      "flag": "🇬🇭"
+      "iso": "gh",
+      "name": "Ghana"
     },
     "away": {
       "code": "PAN",
-      "name": "Panamá",
-      "flag": "🇵🇦"
+      "iso": "pa",
+      "name": "Panamá"
     },
     "homeScore": null,
     "awayScore": null,
@@ -536,13 +536,13 @@
     "venue": "Boston",
     "home": {
       "code": "MEX",
-      "name": "México",
-      "flag": "🇲🇽"
+      "iso": "mx",
+      "name": "México"
     },
     "away": {
       "code": "KOR",
-      "name": "Corea del Sur",
-      "flag": "🇰🇷"
+      "iso": "kr",
+      "name": "Corea del Sur"
     },
     "homeScore": null,
     "awayScore": null,
@@ -558,13 +558,13 @@
     "venue": "Philadelphia",
     "home": {
       "code": "RSA",
-      "name": "Sudáfrica",
-      "flag": "🇿🇦"
+      "iso": "za",
+      "name": "Sudáfrica"
     },
     "away": {
       "code": "CZE",
-      "name": "Chequia",
-      "flag": "🇨🇿"
+      "iso": "cz",
+      "name": "Chequia"
     },
     "homeScore": null,
     "awayScore": null,
@@ -580,13 +580,13 @@
     "venue": "Vancouver",
     "home": {
       "code": "CAN",
-      "name": "Canadá",
-      "flag": "🇨🇦"
+      "iso": "ca",
+      "name": "Canadá"
     },
     "away": {
       "code": "QAT",
-      "name": "Qatar",
-      "flag": "🇶🇦"
+      "iso": "qa",
+      "name": "Qatar"
     },
     "homeScore": null,
     "awayScore": null,
@@ -602,13 +602,13 @@
     "venue": "Miami",
     "home": {
       "code": "BIH",
-      "name": "Bosnia y H.",
-      "flag": "🇧🇦"
+      "iso": "ba",
+      "name": "Bosnia y H."
     },
     "away": {
       "code": "SUI",
-      "name": "Suiza",
-      "flag": "🇨🇭"
+      "iso": "ch",
+      "name": "Suiza"
     },
     "homeScore": null,
     "awayScore": null,
@@ -624,13 +624,13 @@
     "venue": "Monterrey",
     "home": {
       "code": "BRA",
-      "name": "Brasil",
-      "flag": "🇧🇷"
+      "iso": "br",
+      "name": "Brasil"
     },
     "away": {
       "code": "HAI",
-      "name": "Haití",
-      "flag": "🇭🇹"
+      "iso": "ht",
+      "name": "Haití"
     },
     "homeScore": null,
     "awayScore": null,
@@ -646,13 +646,13 @@
     "venue": "Kansas City",
     "home": {
       "code": "MAR",
-      "name": "Marruecos",
-      "flag": "🇲🇦"
+      "iso": "ma",
+      "name": "Marruecos"
     },
     "away": {
       "code": "SCO",
-      "name": "Escocia",
-      "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿"
+      "iso": "gb-sct",
+      "name": "Escocia"
     },
     "homeScore": null,
     "awayScore": null,
@@ -668,13 +668,13 @@
     "venue": "Ciudad de México",
     "home": {
       "code": "USA",
-      "name": "Estados Unidos",
-      "flag": "🇺🇸"
+      "iso": "us",
+      "name": "Estados Unidos"
     },
     "away": {
       "code": "AUS",
-      "name": "Australia",
-      "flag": "🇦🇺"
+      "iso": "au",
+      "name": "Australia"
     },
     "homeScore": null,
     "awayScore": null,
@@ -690,13 +690,13 @@
     "venue": "Dallas",
     "home": {
       "code": "PAR",
-      "name": "Paraguay",
-      "flag": "🇵🇾"
+      "iso": "py",
+      "name": "Paraguay"
     },
     "away": {
       "code": "TUR",
-      "name": "Turquía",
-      "flag": "🇹🇷"
+      "iso": "tr",
+      "name": "Turquía"
     },
     "homeScore": null,
     "awayScore": null,
@@ -712,13 +712,13 @@
     "venue": "San Francisco Bay Area",
     "home": {
       "code": "GER",
-      "name": "Alemania",
-      "flag": "🇩🇪"
+      "iso": "de",
+      "name": "Alemania"
     },
     "away": {
       "code": "CIV",
-      "name": "Costa de Marfil",
-      "flag": "🇨🇮"
+      "iso": "ci",
+      "name": "Costa de Marfil"
     },
     "homeScore": null,
     "awayScore": null,
@@ -734,13 +734,13 @@
     "venue": "Atlanta",
     "home": {
       "code": "CUW",
-      "name": "Curazao",
-      "flag": "🇨🇼"
+      "iso": "cw",
+      "name": "Curazao"
     },
     "away": {
       "code": "ECU",
-      "name": "Ecuador",
-      "flag": "🇪🇨"
+      "iso": "ec",
+      "name": "Ecuador"
     },
     "homeScore": null,
     "awayScore": null,
@@ -756,13 +756,13 @@
     "venue": "Nueva York/Nueva Jersey",
     "home": {
       "code": "NED",
-      "name": "Países Bajos",
-      "flag": "🇳🇱"
+      "iso": "nl",
+      "name": "Países Bajos"
     },
     "away": {
       "code": "SWE",
-      "name": "Suecia",
-      "flag": "🇸🇪"
+      "iso": "se",
+      "name": "Suecia"
     },
     "homeScore": null,
     "awayScore": null,
@@ -778,13 +778,13 @@
     "venue": "Toronto",
     "home": {
       "code": "JPN",
-      "name": "Japón",
-      "flag": "🇯🇵"
+      "iso": "jp",
+      "name": "Japón"
     },
     "away": {
       "code": "TUN",
-      "name": "Túnez",
-      "flag": "🇹🇳"
+      "iso": "tn",
+      "name": "Túnez"
     },
     "homeScore": null,
     "awayScore": null,
@@ -800,13 +800,13 @@
     "venue": "Los Ángeles",
     "home": {
       "code": "BEL",
-      "name": "Bélgica",
-      "flag": "🇧🇪"
+      "iso": "be",
+      "name": "Bélgica"
     },
     "away": {
       "code": "IRN",
-      "name": "Irán",
-      "flag": "🇮🇷"
+      "iso": "ir",
+      "name": "Irán"
     },
     "homeScore": null,
     "awayScore": null,
@@ -822,13 +822,13 @@
     "venue": "Guadalajara",
     "home": {
       "code": "EGY",
-      "name": "Egipto",
-      "flag": "🇪🇬"
+      "iso": "eg",
+      "name": "Egipto"
     },
     "away": {
       "code": "NZL",
-      "name": "Nueva Zelanda",
-      "flag": "🇳🇿"
+      "iso": "nz",
+      "name": "Nueva Zelanda"
     },
     "homeScore": null,
     "awayScore": null,
@@ -844,13 +844,13 @@
     "venue": "Houston",
     "home": {
       "code": "ESP",
-      "name": "España",
-      "flag": "🇪🇸"
+      "iso": "es",
+      "name": "España"
     },
     "away": {
       "code": "KSA",
-      "name": "Arabia Saudita",
-      "flag": "🇸🇦"
+      "iso": "sa",
+      "name": "Arabia Saudita"
     },
     "homeScore": null,
     "awayScore": null,
@@ -866,13 +866,13 @@
     "venue": "Seattle",
     "home": {
       "code": "CPV",
-      "name": "Cabo Verde",
-      "flag": "🇨🇻"
+      "iso": "cv",
+      "name": "Cabo Verde"
     },
     "away": {
       "code": "URU",
-      "name": "Uruguay",
-      "flag": "🇺🇾"
+      "iso": "uy",
+      "name": "Uruguay"
     },
     "homeScore": null,
     "awayScore": null,
@@ -888,13 +888,13 @@
     "venue": "Boston",
     "home": {
       "code": "FRA",
-      "name": "Francia",
-      "flag": "🇫🇷"
+      "iso": "fr",
+      "name": "Francia"
     },
     "away": {
       "code": "IRQ",
-      "name": "Irak",
-      "flag": "🇮🇶"
+      "iso": "iq",
+      "name": "Irak"
     },
     "homeScore": null,
     "awayScore": null,
@@ -910,13 +910,13 @@
     "venue": "Philadelphia",
     "home": {
       "code": "SEN",
-      "name": "Senegal",
-      "flag": "🇸🇳"
+      "iso": "sn",
+      "name": "Senegal"
     },
     "away": {
       "code": "NOR",
-      "name": "Noruega",
-      "flag": "🇳🇴"
+      "iso": "no",
+      "name": "Noruega"
     },
     "homeScore": null,
     "awayScore": null,
@@ -932,13 +932,13 @@
     "venue": "Vancouver",
     "home": {
       "code": "ARG",
-      "name": "Argentina",
-      "flag": "🇦🇷"
+      "iso": "ar",
+      "name": "Argentina"
     },
     "away": {
       "code": "AUT",
-      "name": "Austria",
-      "flag": "🇦🇹"
+      "iso": "at",
+      "name": "Austria"
     },
     "homeScore": null,
     "awayScore": null,
@@ -954,13 +954,13 @@
     "venue": "Miami",
     "home": {
       "code": "ALG",
-      "name": "Argelia",
-      "flag": "🇩🇿"
+      "iso": "dz",
+      "name": "Argelia"
     },
     "away": {
       "code": "JOR",
-      "name": "Jordania",
-      "flag": "🇯🇴"
+      "iso": "jo",
+      "name": "Jordania"
     },
     "homeScore": null,
     "awayScore": null,
@@ -976,13 +976,13 @@
     "venue": "Monterrey",
     "home": {
       "code": "POR",
-      "name": "Portugal",
-      "flag": "🇵🇹"
+      "iso": "pt",
+      "name": "Portugal"
     },
     "away": {
       "code": "UZB",
-      "name": "Uzbekistán",
-      "flag": "🇺🇿"
+      "iso": "uz",
+      "name": "Uzbekistán"
     },
     "homeScore": null,
     "awayScore": null,
@@ -998,13 +998,13 @@
     "venue": "Kansas City",
     "home": {
       "code": "COD",
-      "name": "RD del Congo",
-      "flag": "🇨🇩"
+      "iso": "cd",
+      "name": "RD del Congo"
     },
     "away": {
       "code": "COL",
-      "name": "Colombia",
-      "flag": "🇨🇴"
+      "iso": "co",
+      "name": "Colombia"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1020,13 +1020,13 @@
     "venue": "Ciudad de México",
     "home": {
       "code": "ENG",
-      "name": "Inglaterra",
-      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
+      "iso": "gb-eng",
+      "name": "Inglaterra"
     },
     "away": {
       "code": "GHA",
-      "name": "Ghana",
-      "flag": "🇬🇭"
+      "iso": "gh",
+      "name": "Ghana"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1042,13 +1042,13 @@
     "venue": "Dallas",
     "home": {
       "code": "CRO",
-      "name": "Croacia",
-      "flag": "🇭🇷"
+      "iso": "hr",
+      "name": "Croacia"
     },
     "away": {
       "code": "PAN",
-      "name": "Panamá",
-      "flag": "🇵🇦"
+      "iso": "pa",
+      "name": "Panamá"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1064,13 +1064,13 @@
     "venue": "San Francisco Bay Area",
     "home": {
       "code": "CZE",
-      "name": "Chequia",
-      "flag": "🇨🇿"
+      "iso": "cz",
+      "name": "Chequia"
     },
     "away": {
       "code": "MEX",
-      "name": "México",
-      "flag": "🇲🇽"
+      "iso": "mx",
+      "name": "México"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1086,13 +1086,13 @@
     "venue": "Atlanta",
     "home": {
       "code": "RSA",
-      "name": "Sudáfrica",
-      "flag": "🇿🇦"
+      "iso": "za",
+      "name": "Sudáfrica"
     },
     "away": {
       "code": "KOR",
-      "name": "Corea del Sur",
-      "flag": "🇰🇷"
+      "iso": "kr",
+      "name": "Corea del Sur"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1108,13 +1108,13 @@
     "venue": "Nueva York/Nueva Jersey",
     "home": {
       "code": "SUI",
-      "name": "Suiza",
-      "flag": "🇨🇭"
+      "iso": "ch",
+      "name": "Suiza"
     },
     "away": {
       "code": "CAN",
-      "name": "Canadá",
-      "flag": "🇨🇦"
+      "iso": "ca",
+      "name": "Canadá"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1130,13 +1130,13 @@
     "venue": "Toronto",
     "home": {
       "code": "BIH",
-      "name": "Bosnia y H.",
-      "flag": "🇧🇦"
+      "iso": "ba",
+      "name": "Bosnia y H."
     },
     "away": {
       "code": "QAT",
-      "name": "Qatar",
-      "flag": "🇶🇦"
+      "iso": "qa",
+      "name": "Qatar"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1152,13 +1152,13 @@
     "venue": "Los Ángeles",
     "home": {
       "code": "SCO",
-      "name": "Escocia",
-      "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿"
+      "iso": "gb-sct",
+      "name": "Escocia"
     },
     "away": {
       "code": "BRA",
-      "name": "Brasil",
-      "flag": "🇧🇷"
+      "iso": "br",
+      "name": "Brasil"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1174,13 +1174,13 @@
     "venue": "Guadalajara",
     "home": {
       "code": "MAR",
-      "name": "Marruecos",
-      "flag": "🇲🇦"
+      "iso": "ma",
+      "name": "Marruecos"
     },
     "away": {
       "code": "HAI",
-      "name": "Haití",
-      "flag": "🇭🇹"
+      "iso": "ht",
+      "name": "Haití"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1196,13 +1196,13 @@
     "venue": "Houston",
     "home": {
       "code": "TUR",
-      "name": "Turquía",
-      "flag": "🇹🇷"
+      "iso": "tr",
+      "name": "Turquía"
     },
     "away": {
       "code": "USA",
-      "name": "Estados Unidos",
-      "flag": "🇺🇸"
+      "iso": "us",
+      "name": "Estados Unidos"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1218,13 +1218,13 @@
     "venue": "Seattle",
     "home": {
       "code": "PAR",
-      "name": "Paraguay",
-      "flag": "🇵🇾"
+      "iso": "py",
+      "name": "Paraguay"
     },
     "away": {
       "code": "AUS",
-      "name": "Australia",
-      "flag": "🇦🇺"
+      "iso": "au",
+      "name": "Australia"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1240,13 +1240,13 @@
     "venue": "Boston",
     "home": {
       "code": "ECU",
-      "name": "Ecuador",
-      "flag": "🇪🇨"
+      "iso": "ec",
+      "name": "Ecuador"
     },
     "away": {
       "code": "GER",
-      "name": "Alemania",
-      "flag": "🇩🇪"
+      "iso": "de",
+      "name": "Alemania"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1262,13 +1262,13 @@
     "venue": "Philadelphia",
     "home": {
       "code": "CUW",
-      "name": "Curazao",
-      "flag": "🇨🇼"
+      "iso": "cw",
+      "name": "Curazao"
     },
     "away": {
       "code": "CIV",
-      "name": "Costa de Marfil",
-      "flag": "🇨🇮"
+      "iso": "ci",
+      "name": "Costa de Marfil"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1284,13 +1284,13 @@
     "venue": "Vancouver",
     "home": {
       "code": "TUN",
-      "name": "Túnez",
-      "flag": "🇹🇳"
+      "iso": "tn",
+      "name": "Túnez"
     },
     "away": {
       "code": "NED",
-      "name": "Países Bajos",
-      "flag": "🇳🇱"
+      "iso": "nl",
+      "name": "Países Bajos"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1306,13 +1306,13 @@
     "venue": "Miami",
     "home": {
       "code": "JPN",
-      "name": "Japón",
-      "flag": "🇯🇵"
+      "iso": "jp",
+      "name": "Japón"
     },
     "away": {
       "code": "SWE",
-      "name": "Suecia",
-      "flag": "🇸🇪"
+      "iso": "se",
+      "name": "Suecia"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1328,13 +1328,13 @@
     "venue": "Monterrey",
     "home": {
       "code": "NZL",
-      "name": "Nueva Zelanda",
-      "flag": "🇳🇿"
+      "iso": "nz",
+      "name": "Nueva Zelanda"
     },
     "away": {
       "code": "BEL",
-      "name": "Bélgica",
-      "flag": "🇧🇪"
+      "iso": "be",
+      "name": "Bélgica"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1350,13 +1350,13 @@
     "venue": "Kansas City",
     "home": {
       "code": "EGY",
-      "name": "Egipto",
-      "flag": "🇪🇬"
+      "iso": "eg",
+      "name": "Egipto"
     },
     "away": {
       "code": "IRN",
-      "name": "Irán",
-      "flag": "🇮🇷"
+      "iso": "ir",
+      "name": "Irán"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1372,13 +1372,13 @@
     "venue": "Ciudad de México",
     "home": {
       "code": "URU",
-      "name": "Uruguay",
-      "flag": "🇺🇾"
+      "iso": "uy",
+      "name": "Uruguay"
     },
     "away": {
       "code": "ESP",
-      "name": "España",
-      "flag": "🇪🇸"
+      "iso": "es",
+      "name": "España"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1394,13 +1394,13 @@
     "venue": "Dallas",
     "home": {
       "code": "CPV",
-      "name": "Cabo Verde",
-      "flag": "🇨🇻"
+      "iso": "cv",
+      "name": "Cabo Verde"
     },
     "away": {
       "code": "KSA",
-      "name": "Arabia Saudita",
-      "flag": "🇸🇦"
+      "iso": "sa",
+      "name": "Arabia Saudita"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1416,13 +1416,13 @@
     "venue": "San Francisco Bay Area",
     "home": {
       "code": "NOR",
-      "name": "Noruega",
-      "flag": "🇳🇴"
+      "iso": "no",
+      "name": "Noruega"
     },
     "away": {
       "code": "FRA",
-      "name": "Francia",
-      "flag": "🇫🇷"
+      "iso": "fr",
+      "name": "Francia"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1438,13 +1438,13 @@
     "venue": "Atlanta",
     "home": {
       "code": "SEN",
-      "name": "Senegal",
-      "flag": "🇸🇳"
+      "iso": "sn",
+      "name": "Senegal"
     },
     "away": {
       "code": "IRQ",
-      "name": "Irak",
-      "flag": "🇮🇶"
+      "iso": "iq",
+      "name": "Irak"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1460,13 +1460,13 @@
     "venue": "Nueva York/Nueva Jersey",
     "home": {
       "code": "JOR",
-      "name": "Jordania",
-      "flag": "🇯🇴"
+      "iso": "jo",
+      "name": "Jordania"
     },
     "away": {
       "code": "ARG",
-      "name": "Argentina",
-      "flag": "🇦🇷"
+      "iso": "ar",
+      "name": "Argentina"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1482,13 +1482,13 @@
     "venue": "Toronto",
     "home": {
       "code": "ALG",
-      "name": "Argelia",
-      "flag": "🇩🇿"
+      "iso": "dz",
+      "name": "Argelia"
     },
     "away": {
       "code": "AUT",
-      "name": "Austria",
-      "flag": "🇦🇹"
+      "iso": "at",
+      "name": "Austria"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1504,13 +1504,13 @@
     "venue": "Los Ángeles",
     "home": {
       "code": "COL",
-      "name": "Colombia",
-      "flag": "🇨🇴"
+      "iso": "co",
+      "name": "Colombia"
     },
     "away": {
       "code": "POR",
-      "name": "Portugal",
-      "flag": "🇵🇹"
+      "iso": "pt",
+      "name": "Portugal"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1526,13 +1526,13 @@
     "venue": "Guadalajara",
     "home": {
       "code": "COD",
-      "name": "RD del Congo",
-      "flag": "🇨🇩"
+      "iso": "cd",
+      "name": "RD del Congo"
     },
     "away": {
       "code": "UZB",
-      "name": "Uzbekistán",
-      "flag": "🇺🇿"
+      "iso": "uz",
+      "name": "Uzbekistán"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1542,18 +1542,19 @@
   {
     "id": "K-r32-01",
     "stage": "r32",
-    "matchday": null,
+    "bracketIndex": 1,
+    "sources": null,
     "kickoff": "2026-06-28T16:00:00-03:00",
     "venue": "Ciudad de México",
     "home": {
-      "code": "r32-01-H",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "away": {
-      "code": "r32-01-A",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1569,13 +1570,13 @@
     "venue": "Houston",
     "home": {
       "code": "PAN",
-      "name": "Panamá",
-      "flag": "🇵🇦"
+      "iso": "pa",
+      "name": "Panamá"
     },
     "away": {
       "code": "ENG",
-      "name": "Inglaterra",
-      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
+      "iso": "gb-eng",
+      "name": "Inglaterra"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1585,18 +1586,19 @@
   {
     "id": "K-r32-02",
     "stage": "r32",
-    "matchday": null,
+    "bracketIndex": 2,
+    "sources": null,
     "kickoff": "2026-06-28T19:00:00-03:00",
     "venue": "Guadalajara",
     "home": {
-      "code": "r32-02-H",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "away": {
-      "code": "r32-02-A",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1612,13 +1614,13 @@
     "venue": "Seattle",
     "home": {
       "code": "CRO",
-      "name": "Croacia",
-      "flag": "🇭🇷"
+      "iso": "hr",
+      "name": "Croacia"
     },
     "away": {
       "code": "GHA",
-      "name": "Ghana",
-      "flag": "🇬🇭"
+      "iso": "gh",
+      "name": "Ghana"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1628,18 +1630,19 @@
   {
     "id": "K-r32-03",
     "stage": "r32",
-    "matchday": null,
+    "bracketIndex": 3,
+    "sources": null,
     "kickoff": "2026-06-28T22:00:00-03:00",
     "venue": "Monterrey",
     "home": {
-      "code": "r32-03-H",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "away": {
-      "code": "r32-03-A",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1649,18 +1652,19 @@
   {
     "id": "K-r32-04",
     "stage": "r32",
-    "matchday": null,
+    "bracketIndex": 4,
+    "sources": null,
     "kickoff": "2026-06-29T16:00:00-03:00",
     "venue": "Toronto",
     "home": {
-      "code": "r32-04-H",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "away": {
-      "code": "r32-04-A",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1670,18 +1674,19 @@
   {
     "id": "K-r32-05",
     "stage": "r32",
-    "matchday": null,
+    "bracketIndex": 5,
+    "sources": null,
     "kickoff": "2026-06-29T19:00:00-03:00",
     "venue": "Vancouver",
     "home": {
-      "code": "r32-05-H",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "away": {
-      "code": "r32-05-A",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1691,18 +1696,19 @@
   {
     "id": "K-r32-06",
     "stage": "r32",
-    "matchday": null,
+    "bracketIndex": 6,
+    "sources": null,
     "kickoff": "2026-06-29T22:00:00-03:00",
     "venue": "Atlanta",
     "home": {
-      "code": "r32-06-H",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "away": {
-      "code": "r32-06-A",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1712,18 +1718,19 @@
   {
     "id": "K-r32-07",
     "stage": "r32",
-    "matchday": null,
+    "bracketIndex": 7,
+    "sources": null,
     "kickoff": "2026-06-30T16:00:00-03:00",
     "venue": "Boston",
     "home": {
-      "code": "r32-07-H",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "away": {
-      "code": "r32-07-A",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1733,18 +1740,19 @@
   {
     "id": "K-r32-08",
     "stage": "r32",
-    "matchday": null,
+    "bracketIndex": 8,
+    "sources": null,
     "kickoff": "2026-06-30T19:00:00-03:00",
     "venue": "Dallas",
     "home": {
-      "code": "r32-08-H",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "away": {
-      "code": "r32-08-A",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1754,18 +1762,19 @@
   {
     "id": "K-r32-09",
     "stage": "r32",
-    "matchday": null,
+    "bracketIndex": 9,
+    "sources": null,
     "kickoff": "2026-06-30T22:00:00-03:00",
     "venue": "Houston",
     "home": {
-      "code": "r32-09-H",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "away": {
-      "code": "r32-09-A",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1775,18 +1784,19 @@
   {
     "id": "K-r32-10",
     "stage": "r32",
-    "matchday": null,
+    "bracketIndex": 10,
+    "sources": null,
     "kickoff": "2026-07-01T16:00:00-03:00",
     "venue": "Kansas City",
     "home": {
-      "code": "r32-10-H",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "away": {
-      "code": "r32-10-A",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1796,18 +1806,19 @@
   {
     "id": "K-r32-11",
     "stage": "r32",
-    "matchday": null,
+    "bracketIndex": 11,
+    "sources": null,
     "kickoff": "2026-07-01T19:00:00-03:00",
     "venue": "Los Ángeles",
     "home": {
-      "code": "r32-11-H",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "away": {
-      "code": "r32-11-A",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1817,18 +1828,19 @@
   {
     "id": "K-r32-12",
     "stage": "r32",
-    "matchday": null,
+    "bracketIndex": 12,
+    "sources": null,
     "kickoff": "2026-07-01T22:00:00-03:00",
     "venue": "Miami",
     "home": {
-      "code": "r32-12-H",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "away": {
-      "code": "r32-12-A",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1838,18 +1850,19 @@
   {
     "id": "K-r32-13",
     "stage": "r32",
-    "matchday": null,
+    "bracketIndex": 13,
+    "sources": null,
     "kickoff": "2026-07-02T16:00:00-03:00",
     "venue": "Nueva York/Nueva Jersey",
     "home": {
-      "code": "r32-13-H",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "away": {
-      "code": "r32-13-A",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1859,18 +1872,19 @@
   {
     "id": "K-r32-14",
     "stage": "r32",
-    "matchday": null,
+    "bracketIndex": 14,
+    "sources": null,
     "kickoff": "2026-07-02T19:00:00-03:00",
     "venue": "Philadelphia",
     "home": {
-      "code": "r32-14-H",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "away": {
-      "code": "r32-14-A",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1880,18 +1894,19 @@
   {
     "id": "K-r32-15",
     "stage": "r32",
-    "matchday": null,
+    "bracketIndex": 15,
+    "sources": null,
     "kickoff": "2026-07-02T22:00:00-03:00",
     "venue": "San Francisco Bay Area",
     "home": {
-      "code": "r32-15-H",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "away": {
-      "code": "r32-15-A",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1901,18 +1916,19 @@
   {
     "id": "K-r32-16",
     "stage": "r32",
-    "matchday": null,
+    "bracketIndex": 16,
+    "sources": null,
     "kickoff": "2026-07-03T16:00:00-03:00",
     "venue": "Seattle",
     "home": {
-      "code": "r32-16-H",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "away": {
-      "code": "r32-16-A",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1922,18 +1938,22 @@
   {
     "id": "K-r16-01",
     "stage": "r16",
-    "matchday": null,
+    "bracketIndex": 1,
+    "sources": [
+      "K-r32-01",
+      "K-r32-02"
+    ],
     "kickoff": "2026-07-04T18:00:00-03:00",
     "venue": "Ciudad de México",
     "home": {
-      "code": "r16-01-H",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "away": {
-      "code": "r16-01-A",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1943,18 +1963,22 @@
   {
     "id": "K-r16-02",
     "stage": "r16",
-    "matchday": null,
+    "bracketIndex": 2,
+    "sources": [
+      "K-r32-03",
+      "K-r32-04"
+    ],
     "kickoff": "2026-07-04T22:00:00-03:00",
     "venue": "Guadalajara",
     "home": {
-      "code": "r16-02-H",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "away": {
-      "code": "r16-02-A",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1964,18 +1988,22 @@
   {
     "id": "K-r16-03",
     "stage": "r16",
-    "matchday": null,
+    "bracketIndex": 3,
+    "sources": [
+      "K-r32-05",
+      "K-r32-06"
+    ],
     "kickoff": "2026-07-05T18:00:00-03:00",
     "venue": "Monterrey",
     "home": {
-      "code": "r16-03-H",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "away": {
-      "code": "r16-03-A",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1985,18 +2013,22 @@
   {
     "id": "K-r16-04",
     "stage": "r16",
-    "matchday": null,
+    "bracketIndex": 4,
+    "sources": [
+      "K-r32-07",
+      "K-r32-08"
+    ],
     "kickoff": "2026-07-05T22:00:00-03:00",
     "venue": "Toronto",
     "home": {
-      "code": "r16-04-H",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "away": {
-      "code": "r16-04-A",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "homeScore": null,
     "awayScore": null,
@@ -2006,18 +2038,22 @@
   {
     "id": "K-r16-05",
     "stage": "r16",
-    "matchday": null,
+    "bracketIndex": 5,
+    "sources": [
+      "K-r32-09",
+      "K-r32-10"
+    ],
     "kickoff": "2026-07-06T18:00:00-03:00",
     "venue": "Vancouver",
     "home": {
-      "code": "r16-05-H",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "away": {
-      "code": "r16-05-A",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "homeScore": null,
     "awayScore": null,
@@ -2027,18 +2063,22 @@
   {
     "id": "K-r16-06",
     "stage": "r16",
-    "matchday": null,
+    "bracketIndex": 6,
+    "sources": [
+      "K-r32-11",
+      "K-r32-12"
+    ],
     "kickoff": "2026-07-06T22:00:00-03:00",
     "venue": "Atlanta",
     "home": {
-      "code": "r16-06-H",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "away": {
-      "code": "r16-06-A",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "homeScore": null,
     "awayScore": null,
@@ -2048,18 +2088,22 @@
   {
     "id": "K-r16-07",
     "stage": "r16",
-    "matchday": null,
+    "bracketIndex": 7,
+    "sources": [
+      "K-r32-13",
+      "K-r32-14"
+    ],
     "kickoff": "2026-07-07T18:00:00-03:00",
     "venue": "Boston",
     "home": {
-      "code": "r16-07-H",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "away": {
-      "code": "r16-07-A",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "homeScore": null,
     "awayScore": null,
@@ -2069,18 +2113,22 @@
   {
     "id": "K-r16-08",
     "stage": "r16",
-    "matchday": null,
+    "bracketIndex": 8,
+    "sources": [
+      "K-r32-15",
+      "K-r32-16"
+    ],
     "kickoff": "2026-07-07T22:00:00-03:00",
     "venue": "Dallas",
     "home": {
-      "code": "r16-08-H",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "away": {
-      "code": "r16-08-A",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "homeScore": null,
     "awayScore": null,
@@ -2090,18 +2138,22 @@
   {
     "id": "K-qf-01",
     "stage": "qf",
-    "matchday": null,
+    "bracketIndex": 1,
+    "sources": [
+      "K-r16-01",
+      "K-r16-02"
+    ],
     "kickoff": "2026-07-09T18:00:00-03:00",
     "venue": "Ciudad de México",
     "home": {
-      "code": "qf-01-H",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "away": {
-      "code": "qf-01-A",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "homeScore": null,
     "awayScore": null,
@@ -2111,18 +2163,22 @@
   {
     "id": "K-qf-02",
     "stage": "qf",
-    "matchday": null,
+    "bracketIndex": 2,
+    "sources": [
+      "K-r16-03",
+      "K-r16-04"
+    ],
     "kickoff": "2026-07-09T22:00:00-03:00",
     "venue": "Guadalajara",
     "home": {
-      "code": "qf-02-H",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "away": {
-      "code": "qf-02-A",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "homeScore": null,
     "awayScore": null,
@@ -2132,18 +2188,22 @@
   {
     "id": "K-qf-03",
     "stage": "qf",
-    "matchday": null,
+    "bracketIndex": 3,
+    "sources": [
+      "K-r16-05",
+      "K-r16-06"
+    ],
     "kickoff": "2026-07-11T18:00:00-03:00",
     "venue": "Monterrey",
     "home": {
-      "code": "qf-03-H",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "away": {
-      "code": "qf-03-A",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "homeScore": null,
     "awayScore": null,
@@ -2153,18 +2213,22 @@
   {
     "id": "K-qf-04",
     "stage": "qf",
-    "matchday": null,
+    "bracketIndex": 4,
+    "sources": [
+      "K-r16-07",
+      "K-r16-08"
+    ],
     "kickoff": "2026-07-11T22:00:00-03:00",
     "venue": "Toronto",
     "home": {
-      "code": "qf-04-H",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "away": {
-      "code": "qf-04-A",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "homeScore": null,
     "awayScore": null,
@@ -2174,18 +2238,22 @@
   {
     "id": "K-sf-01",
     "stage": "sf",
-    "matchday": null,
+    "bracketIndex": 1,
+    "sources": [
+      "K-qf-01",
+      "K-qf-02"
+    ],
     "kickoff": "2026-07-14T21:00:00-03:00",
     "venue": "Nueva York/Nueva Jersey",
     "home": {
-      "code": "sf-01-H",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "away": {
-      "code": "sf-01-A",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "homeScore": null,
     "awayScore": null,
@@ -2195,18 +2263,22 @@
   {
     "id": "K-sf-02",
     "stage": "sf",
-    "matchday": null,
+    "bracketIndex": 2,
+    "sources": [
+      "K-qf-03",
+      "K-qf-04"
+    ],
     "kickoff": "2026-07-15T21:00:00-03:00",
     "venue": "Atlanta",
     "home": {
-      "code": "sf-02-H",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "away": {
-      "code": "sf-02-A",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "homeScore": null,
     "awayScore": null,
@@ -2216,18 +2288,22 @@
   {
     "id": "K-third-01",
     "stage": "third",
-    "matchday": null,
+    "bracketIndex": 1,
+    "sources": [
+      "K-sf-01",
+      "K-sf-02"
+    ],
     "kickoff": "2026-07-18T17:00:00-03:00",
     "venue": "Miami",
     "home": {
-      "code": "third-01-H",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "away": {
-      "code": "third-01-A",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "homeScore": null,
     "awayScore": null,
@@ -2237,18 +2313,22 @@
   {
     "id": "K-final-01",
     "stage": "final",
-    "matchday": null,
+    "bracketIndex": 1,
+    "sources": [
+      "K-sf-01",
+      "K-sf-02"
+    ],
     "kickoff": "2026-07-19T16:00:00-03:00",
     "venue": "Nueva York/Nueva Jersey",
     "home": {
-      "code": "final-01-H",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "away": {
-      "code": "final-01-A",
-      "name": "Por definir",
-      "flag": "⚽"
+      "code": "Por definir",
+      "iso": null,
+      "name": "Por definir"
     },
     "homeScore": null,
     "awayScore": null,

@@ -12,10 +12,6 @@ service cloud.firestore {
         && get(/databases/$(database)/documents/users/$(request.auth.uid)).data.isAdmin == true;
     }
 
-    function nicknameTaken(nick) {
-      return exists(/databases/$(database)/documents/nicknames/$(nick));
-    }
-
     match /users/{uid} {
       allow read: if isSignedIn();
       allow create: if isSignedIn()
@@ -45,10 +41,16 @@ service cloud.firestore {
         && predId == request.auth.uid + '_' + request.resource.data.matchId
         && exists(/databases/$(database)/documents/matches/$(request.resource.data.matchId))
         && get(/databases/$(database)/documents/matches/$(request.resource.data.matchId)).data.kickoff > request.time
-        && request.resource.data.home is int
-        && request.resource.data.away is int
-        && request.resource.data.home >= 0 && request.resource.data.home <= 20
-        && request.resource.data.away >= 0 && request.resource.data.away <= 20;
+        && (
+          // Pronóstico de marcador
+          (request.resource.data.home is int
+            && request.resource.data.away is int
+            && request.resource.data.home >= 0 && request.resource.data.home <= 20
+            && request.resource.data.away >= 0 && request.resource.data.away <= 20)
+          ||
+          // Pronóstico de solo ganador
+          (request.resource.data.winner in ["home", "draw", "away"])
+        );
       allow delete: if false;
     }
 

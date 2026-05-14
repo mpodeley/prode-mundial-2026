@@ -14,7 +14,6 @@
 </head>
 <body class="min-h-screen bg-gradient-to-br from-emerald-900 via-emerald-800 to-teal-900 text-white" style="font-family: Inter, system-ui, sans-serif" x-data="prodeApp()" x-init="init()">
 
-  <!-- Top bar -->
   <header class="sticky top-0 z-30 backdrop-blur bg-emerald-950/70 border-b border-white/10">
     <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
       <div class="flex items-center gap-2">
@@ -23,18 +22,17 @@
         <span class="text-emerald-300 text-sm hidden sm:inline">· Mundial 2026</span>
       </div>
       <div class="flex items-center gap-3 text-sm">
-        <span class="text-emerald-200" x-show="user">Hola, <strong x-text="user?.nickname"></strong></span>
-        <a x-show="user?.isAdmin" href="./admin.html" class="text-amber-300 hover:text-amber-200 font-semibold">Admin</a>
+        <span class="text-emerald-200" x-show="user" x-cloak>Hola, <strong x-text="user?.nickname"></strong></span>
+        <a x-show="user?.isAdmin" x-cloak href="./admin.html" class="text-amber-300 hover:text-amber-200 font-semibold">Admin</a>
         <button @click="logout" class="text-emerald-200 hover:text-white">Salir</button>
       </div>
     </div>
 
-    <!-- Tabs -->
-    <nav class="max-w-5xl mx-auto px-4 flex gap-1">
+    <nav class="max-w-5xl mx-auto px-4 flex gap-1 overflow-x-auto">
       <template x-for="t in tabs" :key="t.id">
         <button @click="tab=t.id"
                 :class="tab===t.id ? 'border-amber-400 text-white' : 'border-transparent text-emerald-200 hover:text-white'"
-                class="px-3 sm:px-4 py-3 border-b-2 font-semibold text-sm sm:text-base transition">
+                class="px-3 sm:px-4 py-3 border-b-2 font-semibold text-sm sm:text-base transition whitespace-nowrap">
           <span x-text="t.label"></span>
           <span x-show="t.badge" class="ml-1 text-xs bg-amber-400 text-emerald-950 rounded-full px-1.5" x-text="t.badge"></span>
         </button>
@@ -44,19 +42,18 @@
 
   <main class="max-w-5xl mx-auto px-4 py-6">
 
-    <!-- Loading -->
     <div x-show="loading" class="space-y-3">
       <template x-for="i in 5">
-        <div class="skeleton h-20 rounded-xl"></div>
+        <div class="skeleton h-24 rounded-xl"></div>
       </template>
     </div>
 
     <!-- FIXTURES TAB -->
-    <section x-show="!loading && tab==='fixtures'" class="space-y-6">
+    <section x-show="!loading && tab==='fixtures'" x-cloak class="space-y-6">
 
-      <div class="flex flex-wrap gap-2 items-center">
-        <label class="text-sm text-emerald-200">Filtrar fase:</label>
-        <select x-model="stageFilter" class="bg-white/10 border border-white/20 rounded-lg px-3 py-1.5 text-sm">
+      <div class="flex flex-wrap gap-2 items-center text-sm">
+        <label class="text-emerald-200">Filtrar fase:</label>
+        <select x-model="stageFilter" class="bg-white/10 border border-white/20 rounded-lg px-3 py-1.5">
           <option value="">Todas</option>
           <option value="group">Fase de grupos</option>
           <option value="r32">32avos</option>
@@ -66,7 +63,7 @@
           <option value="third">3er puesto</option>
           <option value="final">Final</option>
         </select>
-        <label class="ml-3 text-sm flex items-center gap-1 cursor-pointer">
+        <label class="ml-3 flex items-center gap-1 cursor-pointer">
           <input type="checkbox" x-model="onlyMine" class="accent-amber-400" />
           <span>Solo pendientes</span>
         </label>
@@ -77,7 +74,8 @@
           <h2 class="text-emerald-300 font-bold text-lg mb-2" x-text="group.label"></h2>
           <div class="space-y-2">
             <template x-for="m in group.matches" :key="m.id">
-              <article :class="m.status==='live' ? 'live-indicator' : ''"
+              <article :id="'m-'+m.id"
+                       :class="m.status==='live' ? 'live-indicator' : ''"
                        class="bg-white/5 border border-white/10 hover:bg-white/10 rounded-xl p-3 sm:p-4 transition">
                 <div class="flex items-center justify-between text-xs text-emerald-200 mb-2">
                   <span x-text="formatKickoff(m.kickoff)"></span>
@@ -92,10 +90,10 @@
                 <div class="grid grid-cols-[1fr_auto_1fr] items-center gap-2 sm:gap-4">
                   <div class="flex items-center gap-2 justify-end text-right">
                     <span class="font-semibold text-sm sm:text-base" x-text="m.home.name"></span>
-                    <span class="text-2xl" x-text="m.home.flag || '⚽'"></span>
+                    <span x-html="flagHtml(m.home)"></span>
                   </div>
 
-                  <div class="flex items-center gap-1 bg-emerald-950/40 rounded-lg px-2 py-1.5">
+                  <div class="bg-emerald-950/40 rounded-lg px-2 py-1.5">
                     <template x-if="m.status==='finished' || m.status==='live'">
                       <div class="flex gap-2 items-center font-bold text-xl">
                         <span x-text="m.homeScore ?? '-'"></span>
@@ -106,47 +104,61 @@
                     <template x-if="m.status!=='finished' && m.status!=='live'">
                       <div class="flex gap-1 items-center">
                         <input type="number" min="0" max="20" inputmode="numeric"
-                               :disabled="!isOpen(m)"
-                               x-model.number="myPredictions[m.id] && myPredictions[m.id].home"
-                               @change="savePrediction(m, 'home', $event.target.value)"
+                               :disabled="!isOpen(m) || !canPredict(m)"
+                               :value="getScoreField(m, 'home')"
+                               @input="onScoreInput(m, 'home', $event.target.value)"
                                class="w-10 sm:w-12 text-center bg-white/90 text-gray-900 rounded font-bold py-0.5 disabled:opacity-50" />
                         <span class="text-emerald-300">vs</span>
                         <input type="number" min="0" max="20" inputmode="numeric"
-                               :disabled="!isOpen(m)"
-                               x-model.number="myPredictions[m.id] && myPredictions[m.id].away"
-                               @change="savePrediction(m, 'away', $event.target.value)"
+                               :disabled="!isOpen(m) || !canPredict(m)"
+                               :value="getScoreField(m, 'away')"
+                               @input="onScoreInput(m, 'away', $event.target.value)"
                                class="w-10 sm:w-12 text-center bg-white/90 text-gray-900 rounded font-bold py-0.5 disabled:opacity-50" />
                       </div>
                     </template>
                   </div>
 
                   <div class="flex items-center gap-2">
-                    <span class="text-2xl" x-text="m.away.flag || '⚽'"></span>
+                    <span x-html="flagHtml(m.away)"></span>
                     <span class="font-semibold text-sm sm:text-base" x-text="m.away.name"></span>
                   </div>
                 </div>
 
+                <!-- Botones "solo ganador" -->
+                <div x-show="isOpen(m) && canPredict(m)" class="mt-3 grid grid-cols-3 gap-1 text-xs">
+                  <button type="button" @click="pickWinner(m, 'home')"
+                          :class="isWinnerPick(m, 'home') ? 'bg-amber-400 text-emerald-950 font-bold' : 'bg-white/10 hover:bg-white/20 text-white/80'"
+                          class="py-1.5 rounded transition">Gana local</button>
+                  <button type="button" @click="pickWinner(m, 'draw')"
+                          :class="isWinnerPick(m, 'draw') ? 'bg-amber-400 text-emerald-950 font-bold' : 'bg-white/10 hover:bg-white/20 text-white/80'"
+                          class="py-1.5 rounded transition">Empate</button>
+                  <button type="button" @click="pickWinner(m, 'away')"
+                          :class="isWinnerPick(m, 'away') ? 'bg-amber-400 text-emerald-950 font-bold' : 'bg-white/10 hover:bg-white/20 text-white/80'"
+                          class="py-1.5 rounded transition">Gana visitante</button>
+                </div>
+                <p x-show="isOpen(m) && canPredict(m)" class="text-[10px] text-emerald-200/60 mt-1 text-center">
+                  Solo ganador = 1 pt si acertás · Con marcador = 3 pts exacto o 1 pt ganador
+                </p>
+
                 <!-- Tu pronóstico + puntos en partidos finalizados -->
-                <div x-show="m.status==='finished' && myPredictions[m.id]" class="mt-2 pt-2 border-t border-white/10 flex items-center justify-between text-xs">
-                  <span class="text-emerald-200">
-                    Tu pronóstico: <strong x-text="myPredictions[m.id]?.home + '-' + myPredictions[m.id]?.away"></strong>
-                  </span>
+                <div x-show="m.status==='finished' && myPredictions[m.id]" x-cloak class="mt-2 pt-2 border-t border-white/10 flex items-center justify-between text-xs">
+                  <span class="text-emerald-200" x-text="formatMyPrediction(m)"></span>
                   <span class="font-bold"
                         :class="pointsFor(m) === 3 ? 'text-amber-300' : pointsFor(m) === 1 ? 'text-emerald-300' : 'text-white/40'"
                         x-text="pointsFor(m) + ' pts'"></span>
                 </div>
-                <p x-show="saveStatus[m.id]" class="text-xs mt-1" :class="saveStatus[m.id].ok ? 'text-emerald-300' : 'text-red-300'" x-text="saveStatus[m.id].msg"></p>
+                <p x-show="saveStatus[m.id]" x-cloak class="text-xs mt-1" :class="saveStatus[m.id].ok ? 'text-emerald-300' : 'text-red-300'" x-text="saveStatus[m.id].msg"></p>
               </article>
             </template>
           </div>
         </div>
       </template>
 
-      <p x-show="!groupedFixtures.length" class="text-center text-emerald-200/70 py-12">No hay partidos para mostrar con estos filtros.</p>
+      <p x-show="!groupedFixtures.length" x-cloak class="text-center text-emerald-200/70 py-12">No hay partidos para mostrar con estos filtros.</p>
     </section>
 
     <!-- MIS PRONOSTICOS TAB -->
-    <section x-show="!loading && tab==='mine'" class="space-y-4">
+    <section x-show="!loading && tab==='mine'" x-cloak class="space-y-4">
       <div class="bg-white/10 rounded-xl p-4 grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
         <div><p class="text-3xl font-bold text-amber-300" x-text="myStats.total"></p><p class="text-xs text-emerald-200">Puntos totales</p></div>
         <div><p class="text-3xl font-bold text-amber-300" x-text="myStats.exact"></p><p class="text-xs text-emerald-200">Exactos (3 pts)</p></div>
@@ -158,17 +170,96 @@
       <p x-show="!pendingMatches.length" class="text-emerald-200/70 text-sm">¡Tenés todo pronosticado! 🎉</p>
       <div class="space-y-2">
         <template x-for="m in pendingMatches" :key="m.id">
-          <button @click="tab='fixtures'; setTimeout(() => document.getElementById('m-'+m.id)?.scrollIntoView({behavior:'smooth'}), 100)"
-                  class="w-full text-left bg-white/5 hover:bg-white/10 border border-white/10 rounded-lg p-3 flex justify-between items-center">
-            <span><span x-text="m.home.flag"></span> <span x-text="m.home.name"></span> vs <span x-text="m.away.name"></span> <span x-text="m.away.flag"></span></span>
+          <button @click="goToMatch(m.id)"
+                  class="w-full text-left bg-white/5 hover:bg-white/10 border border-white/10 rounded-lg p-3 flex justify-between items-center gap-2">
+            <span class="flex items-center gap-2 text-sm">
+              <span x-html="flagHtml(m.home)"></span>
+              <span x-text="m.home.name"></span>
+              <span class="text-emerald-400">vs</span>
+              <span x-text="m.away.name"></span>
+              <span x-html="flagHtml(m.away)"></span>
+            </span>
             <span class="text-xs text-emerald-200" x-text="formatKickoff(m.kickoff)"></span>
           </button>
         </template>
       </div>
     </section>
 
+    <!-- LLAVES (BRACKET) TAB -->
+    <section x-show="!loading && tab==='bracket'" x-cloak class="space-y-6">
+      <p class="text-emerald-200/80 text-sm">Árbol de eliminatorias. Los emparejamientos se completan al cerrar la fase de grupos.</p>
+
+      <div class="overflow-x-auto -mx-4 px-4">
+        <div class="flex gap-3 sm:gap-4 pb-4" style="min-width: 1100px;">
+          <template x-for="col in bracketColumns" :key="col.stage">
+            <div class="flex-1 flex flex-col justify-around min-w-[170px]">
+              <h3 class="text-center text-emerald-300 font-bold text-xs sm:text-sm mb-2 uppercase tracking-wider" x-text="col.label"></h3>
+              <template x-for="m in col.matches" :key="m.id">
+                <div @click="goToMatch(m.id)"
+                     class="bg-white/5 hover:bg-white/10 border border-white/10 rounded-lg p-2 my-1.5 cursor-pointer transition text-xs">
+                  <div class="flex justify-between items-center py-0.5 gap-1">
+                    <span class="flex items-center gap-1 truncate">
+                      <span x-html="flagHtml(m.home, 'small')"></span>
+                      <span class="truncate" x-text="m.home.name"></span>
+                    </span>
+                    <span class="font-bold tabular-nums" x-text="m.homeScore ?? '–'"></span>
+                  </div>
+                  <div class="border-t border-white/10 my-0.5"></div>
+                  <div class="flex justify-between items-center py-0.5 gap-1">
+                    <span class="flex items-center gap-1 truncate">
+                      <span x-html="flagHtml(m.away, 'small')"></span>
+                      <span class="truncate" x-text="m.away.name"></span>
+                    </span>
+                    <span class="font-bold tabular-nums" x-text="m.awayScore ?? '–'"></span>
+                  </div>
+                </div>
+              </template>
+            </div>
+          </template>
+        </div>
+      </div>
+
+      <!-- 3er puesto + Campeón -->
+      <div class="grid sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
+        <div class="bg-white/5 border border-white/10 rounded-xl p-3">
+          <h4 class="text-emerald-300 font-bold text-sm mb-2 text-center">🥉 Tercer puesto</h4>
+          <template x-if="thirdMatch">
+            <div @click="goToMatch(thirdMatch.id)" class="cursor-pointer hover:bg-white/5 rounded p-1">
+              <div class="flex justify-between items-center py-1">
+                <span class="flex items-center gap-2 truncate">
+                  <span x-html="flagHtml(thirdMatch.home)"></span>
+                  <span x-text="thirdMatch.home.name"></span>
+                </span>
+                <span class="font-bold" x-text="thirdMatch.homeScore ?? '–'"></span>
+              </div>
+              <div class="flex justify-between items-center py-1 border-t border-white/10">
+                <span class="flex items-center gap-2 truncate">
+                  <span x-html="flagHtml(thirdMatch.away)"></span>
+                  <span x-text="thirdMatch.away.name"></span>
+                </span>
+                <span class="font-bold" x-text="thirdMatch.awayScore ?? '–'"></span>
+              </div>
+            </div>
+          </template>
+        </div>
+
+        <div class="bg-gradient-to-br from-amber-500/20 to-amber-700/10 border border-amber-400/40 rounded-xl p-3">
+          <h4 class="text-amber-300 font-bold text-sm mb-2 text-center">🏆 Campeón</h4>
+          <template x-if="champion">
+            <div class="text-center">
+              <span class="text-4xl" x-html="flagHtml(champion, 'big')"></span>
+              <p class="font-bold text-amber-200 text-lg" x-text="champion.name"></p>
+            </div>
+          </template>
+          <template x-if="!champion">
+            <p class="text-center text-amber-200/60 text-sm py-4">Por definir</p>
+          </template>
+        </div>
+      </div>
+    </section>
+
     <!-- RANKING TAB -->
-    <section x-show="!loading && tab==='ranking'" class="space-y-3">
+    <section x-show="!loading && tab==='ranking'" x-cloak class="space-y-3">
       <div class="flex justify-between items-center">
         <h2 class="text-emerald-300 font-bold text-lg">Tabla general</h2>
         <button @click="loadRanking" class="text-xs bg-white/10 hover:bg-white/20 rounded px-2 py-1">Refrescar</button>
