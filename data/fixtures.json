@@ -7,14 +7,14 @@
     "kickoff": "2026-06-11T13:00:00-03:00",
     "venue": "San Francisco Bay Area",
     "home": {
-      "code": "A1",
-      "name": "Equipo A1",
-      "flag": "⚽"
+      "code": "MEX",
+      "name": "México",
+      "flag": "🇲🇽"
     },
     "away": {
-      "code": "A2",
-      "name": "Equipo A2",
-      "flag": "⚽"
+      "code": "RSA",
+      "name": "Sudáfrica",
+      "flag": "🇿🇦"
     },
     "homeScore": null,
     "awayScore": null,
@@ -29,14 +29,14 @@
     "kickoff": "2026-06-11T16:00:00-03:00",
     "venue": "Atlanta",
     "home": {
-      "code": "A3",
-      "name": "Equipo A3",
-      "flag": "⚽"
+      "code": "KOR",
+      "name": "Corea del Sur",
+      "flag": "🇰🇷"
     },
     "away": {
-      "code": "A4",
-      "name": "Equipo A4",
-      "flag": "⚽"
+      "code": "CZE",
+      "name": "Chequia",
+      "flag": "🇨🇿"
     },
     "homeScore": null,
     "awayScore": null,
@@ -49,16 +49,16 @@
     "group": "B",
     "matchday": 1,
     "kickoff": "2026-06-11T19:00:00-03:00",
-    "venue": "New York/New Jersey",
+    "venue": "Nueva York/Nueva Jersey",
     "home": {
-      "code": "B1",
-      "name": "Equipo B1",
-      "flag": "⚽"
+      "code": "CAN",
+      "name": "Canadá",
+      "flag": "🇨🇦"
     },
     "away": {
-      "code": "B2",
-      "name": "Equipo B2",
-      "flag": "⚽"
+      "code": "BIH",
+      "name": "Bosnia y H.",
+      "flag": "🇧🇦"
     },
     "homeScore": null,
     "awayScore": null,
@@ -73,14 +73,14 @@
     "kickoff": "2026-06-11T22:00:00-03:00",
     "venue": "Toronto",
     "home": {
-      "code": "B3",
-      "name": "Equipo B3",
-      "flag": "⚽"
+      "code": "QAT",
+      "name": "Qatar",
+      "flag": "🇶🇦"
     },
     "away": {
-      "code": "B4",
-      "name": "Equipo B4",
-      "flag": "⚽"
+      "code": "SUI",
+      "name": "Suiza",
+      "flag": "🇨🇭"
     },
     "homeScore": null,
     "awayScore": null,
@@ -93,16 +93,16 @@
     "group": "C",
     "matchday": 1,
     "kickoff": "2026-06-12T13:00:00-03:00",
-    "venue": "Los Angeles",
+    "venue": "Los Ángeles",
     "home": {
-      "code": "C1",
-      "name": "Equipo C1",
-      "flag": "⚽"
+      "code": "BRA",
+      "name": "Brasil",
+      "flag": "🇧🇷"
     },
     "away": {
-      "code": "C2",
-      "name": "Equipo C2",
-      "flag": "⚽"
+      "code": "MAR",
+      "name": "Marruecos",
+      "flag": "🇲🇦"
     },
     "homeScore": null,
     "awayScore": null,
@@ -117,14 +117,14 @@
     "kickoff": "2026-06-12T16:00:00-03:00",
     "venue": "Guadalajara",
     "home": {
-      "code": "C3",
-      "name": "Equipo C3",
-      "flag": "⚽"
+      "code": "HAI",
+      "name": "Haití",
+      "flag": "🇭🇹"
     },
     "away": {
-      "code": "C4",
-      "name": "Equipo C4",
-      "flag": "⚽"
+      "code": "SCO",
+      "name": "Escocia",
+      "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿"
     },
     "homeScore": null,
     "awayScore": null,
@@ -139,14 +139,14 @@
     "kickoff": "2026-06-12T19:00:00-03:00",
     "venue": "Houston",
     "home": {
-      "code": "D1",
-      "name": "Equipo D1",
-      "flag": "⚽"
+      "code": "USA",
+      "name": "Estados Unidos",
+      "flag": "🇺🇸"
     },
     "away": {
-      "code": "D2",
-      "name": "Equipo D2",
-      "flag": "⚽"
+      "code": "PAR",
+      "name": "Paraguay",
+      "flag": "🇵🇾"
     },
     "homeScore": null,
     "awayScore": null,
@@ -161,14 +161,14 @@
     "kickoff": "2026-06-12T22:00:00-03:00",
     "venue": "Seattle",
     "home": {
-      "code": "D3",
-      "name": "Equipo D3",
-      "flag": "⚽"
+      "code": "AUS",
+      "name": "Australia",
+      "flag": "🇦🇺"
     },
     "away": {
-      "code": "D4",
-      "name": "Equipo D4",
-      "flag": "⚽"
+      "code": "TUR",
+      "name": "Turquía",
+      "flag": "🇹🇷"
     },
     "homeScore": null,
     "awayScore": null,
@@ -183,14 +183,14 @@
     "kickoff": "2026-06-13T13:00:00-03:00",
     "venue": "Boston",
     "home": {
-      "code": "E1",
-      "name": "Equipo E1",
-      "flag": "⚽"
+      "code": "GER",
+      "name": "Alemania",
+      "flag": "🇩🇪"
     },
     "away": {
-      "code": "E2",
-      "name": "Equipo E2",
-      "flag": "⚽"
+      "code": "CUW",
+      "name": "Curazao",
+      "flag": "🇨🇼"
     },
     "homeScore": null,
     "awayScore": null,
@@ -205,14 +205,14 @@
     "kickoff": "2026-06-13T16:00:00-03:00",
     "venue": "Philadelphia",
     "home": {
-      "code": "E3",
-      "name": "Equipo E3",
-      "flag": "⚽"
+      "code": "CIV",
+      "name": "Costa de Marfil",
+      "flag": "🇨🇮"
     },
     "away": {
-      "code": "E4",
-      "name": "Equipo E4",
-      "flag": "⚽"
+      "code": "ECU",
+      "name": "Ecuador",
+      "flag": "🇪🇨"
     },
     "homeScore": null,
     "awayScore": null,
@@ -227,14 +227,14 @@
     "kickoff": "2026-06-13T19:00:00-03:00",
     "venue": "Vancouver",
     "home": {
-      "code": "F1",
-      "name": "Equipo F1",
-      "flag": "⚽"
+      "code": "NED",
+      "name": "Países Bajos",
+      "flag": "🇳🇱"
     },
     "away": {
-      "code": "F2",
-      "name": "Equipo F2",
-      "flag": "⚽"
+      "code": "JPN",
+      "name": "Japón",
+      "flag": "🇯🇵"
     },
     "homeScore": null,
     "awayScore": null,
@@ -249,14 +249,14 @@
     "kickoff": "2026-06-13T22:00:00-03:00",
     "venue": "Miami",
     "home": {
-      "code": "F3",
-      "name": "Equipo F3",
-      "flag": "⚽"
+      "code": "SWE",
+      "name": "Suecia",
+      "flag": "🇸🇪"
     },
     "away": {
-      "code": "F4",
-      "name": "Equipo F4",
-      "flag": "⚽"
+      "code": "TUN",
+      "name": "Túnez",
+      "flag": "🇹🇳"
     },
     "homeScore": null,
     "awayScore": null,
@@ -271,14 +271,14 @@
     "kickoff": "2026-06-14T13:00:00-03:00",
     "venue": "Monterrey",
     "home": {
-      "code": "G1",
-      "name": "Equipo G1",
-      "flag": "⚽"
+      "code": "BEL",
+      "name": "Bélgica",
+      "flag": "🇧🇪"
     },
     "away": {
-      "code": "G2",
-      "name": "Equipo G2",
-      "flag": "⚽"
+      "code": "EGY",
+      "name": "Egipto",
+      "flag": "🇪🇬"
     },
     "homeScore": null,
     "awayScore": null,
@@ -293,14 +293,14 @@
     "kickoff": "2026-06-14T16:00:00-03:00",
     "venue": "Kansas City",
     "home": {
-      "code": "G3",
-      "name": "Equipo G3",
-      "flag": "⚽"
+      "code": "IRN",
+      "name": "Irán",
+      "flag": "🇮🇷"
     },
     "away": {
-      "code": "G4",
-      "name": "Equipo G4",
-      "flag": "⚽"
+      "code": "NZL",
+      "name": "Nueva Zelanda",
+      "flag": "🇳🇿"
     },
     "homeScore": null,
     "awayScore": null,
@@ -313,16 +313,16 @@
     "group": "H",
     "matchday": 1,
     "kickoff": "2026-06-14T19:00:00-03:00",
-    "venue": "Mexico City",
+    "venue": "Ciudad de México",
     "home": {
-      "code": "H1",
-      "name": "Equipo H1",
-      "flag": "⚽"
+      "code": "ESP",
+      "name": "España",
+      "flag": "🇪🇸"
     },
     "away": {
-      "code": "H2",
-      "name": "Equipo H2",
-      "flag": "⚽"
+      "code": "CPV",
+      "name": "Cabo Verde",
+      "flag": "🇨🇻"
     },
     "homeScore": null,
     "awayScore": null,
@@ -337,14 +337,14 @@
     "kickoff": "2026-06-14T22:00:00-03:00",
     "venue": "Dallas",
     "home": {
-      "code": "H3",
-      "name": "Equipo H3",
-      "flag": "⚽"
+      "code": "KSA",
+      "name": "Arabia Saudita",
+      "flag": "🇸🇦"
     },
     "away": {
-      "code": "H4",
-      "name": "Equipo H4",
-      "flag": "⚽"
+      "code": "URU",
+      "name": "Uruguay",
+      "flag": "🇺🇾"
     },
     "homeScore": null,
     "awayScore": null,
@@ -359,14 +359,14 @@
     "kickoff": "2026-06-15T13:00:00-03:00",
     "venue": "San Francisco Bay Area",
     "home": {
-      "code": "I1",
-      "name": "Equipo I1",
-      "flag": "⚽"
+      "code": "FRA",
+      "name": "Francia",
+      "flag": "🇫🇷"
     },
     "away": {
-      "code": "I2",
-      "name": "Equipo I2",
-      "flag": "⚽"
+      "code": "SEN",
+      "name": "Senegal",
+      "flag": "🇸🇳"
     },
     "homeScore": null,
     "awayScore": null,
@@ -381,14 +381,14 @@
     "kickoff": "2026-06-15T16:00:00-03:00",
     "venue": "Atlanta",
     "home": {
-      "code": "I3",
-      "name": "Equipo I3",
-      "flag": "⚽"
+      "code": "IRQ",
+      "name": "Irak",
+      "flag": "🇮🇶"
     },
     "away": {
-      "code": "I4",
-      "name": "Equipo I4",
-      "flag": "⚽"
+      "code": "NOR",
+      "name": "Noruega",
+      "flag": "🇳🇴"
     },
     "homeScore": null,
     "awayScore": null,
@@ -401,16 +401,16 @@
     "group": "J",
     "matchday": 1,
     "kickoff": "2026-06-15T19:00:00-03:00",
-    "venue": "New York/New Jersey",
+    "venue": "Nueva York/Nueva Jersey",
     "home": {
-      "code": "J1",
-      "name": "Equipo J1",
-      "flag": "⚽"
+      "code": "ARG",
+      "name": "Argentina",
+      "flag": "🇦🇷"
     },
     "away": {
-      "code": "J2",
-      "name": "Equipo J2",
-      "flag": "⚽"
+      "code": "ALG",
+      "name": "Argelia",
+      "flag": "🇩🇿"
     },
     "homeScore": null,
     "awayScore": null,
@@ -425,14 +425,14 @@
     "kickoff": "2026-06-15T22:00:00-03:00",
     "venue": "Toronto",
     "home": {
-      "code": "J3",
-      "name": "Equipo J3",
-      "flag": "⚽"
+      "code": "AUT",
+      "name": "Austria",
+      "flag": "🇦🇹"
     },
     "away": {
-      "code": "J4",
-      "name": "Equipo J4",
-      "flag": "⚽"
+      "code": "JOR",
+      "name": "Jordania",
+      "flag": "🇯🇴"
     },
     "homeScore": null,
     "awayScore": null,
@@ -445,16 +445,16 @@
     "group": "K",
     "matchday": 1,
     "kickoff": "2026-06-16T13:00:00-03:00",
-    "venue": "Los Angeles",
+    "venue": "Los Ángeles",
     "home": {
-      "code": "K1",
-      "name": "Equipo K1",
-      "flag": "⚽"
+      "code": "POR",
+      "name": "Portugal",
+      "flag": "🇵🇹"
     },
     "away": {
-      "code": "K2",
-      "name": "Equipo K2",
-      "flag": "⚽"
+      "code": "COD",
+      "name": "RD del Congo",
+      "flag": "🇨🇩"
     },
     "homeScore": null,
     "awayScore": null,
@@ -469,14 +469,14 @@
     "kickoff": "2026-06-16T16:00:00-03:00",
     "venue": "Guadalajara",
     "home": {
-      "code": "K3",
-      "name": "Equipo K3",
-      "flag": "⚽"
+      "code": "UZB",
+      "name": "Uzbekistán",
+      "flag": "🇺🇿"
     },
     "away": {
-      "code": "K4",
-      "name": "Equipo K4",
-      "flag": "⚽"
+      "code": "COL",
+      "name": "Colombia",
+      "flag": "🇨🇴"
     },
     "homeScore": null,
     "awayScore": null,
@@ -491,14 +491,14 @@
     "kickoff": "2026-06-16T19:00:00-03:00",
     "venue": "Houston",
     "home": {
-      "code": "L1",
-      "name": "Equipo L1",
-      "flag": "⚽"
+      "code": "ENG",
+      "name": "Inglaterra",
+      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
     },
     "away": {
-      "code": "L2",
-      "name": "Equipo L2",
-      "flag": "⚽"
+      "code": "CRO",
+      "name": "Croacia",
+      "flag": "🇭🇷"
     },
     "homeScore": null,
     "awayScore": null,
@@ -513,14 +513,14 @@
     "kickoff": "2026-06-16T22:00:00-03:00",
     "venue": "Seattle",
     "home": {
-      "code": "L3",
-      "name": "Equipo L3",
-      "flag": "⚽"
+      "code": "GHA",
+      "name": "Ghana",
+      "flag": "🇬🇭"
     },
     "away": {
-      "code": "L4",
-      "name": "Equipo L4",
-      "flag": "⚽"
+      "code": "PAN",
+      "name": "Panamá",
+      "flag": "🇵🇦"
     },
     "homeScore": null,
     "awayScore": null,
@@ -535,14 +535,14 @@
     "kickoff": "2026-06-17T13:00:00-03:00",
     "venue": "Boston",
     "home": {
-      "code": "A1",
-      "name": "Equipo A1",
-      "flag": "⚽"
+      "code": "MEX",
+      "name": "México",
+      "flag": "🇲🇽"
     },
     "away": {
-      "code": "A3",
-      "name": "Equipo A3",
-      "flag": "⚽"
+      "code": "KOR",
+      "name": "Corea del Sur",
+      "flag": "🇰🇷"
     },
     "homeScore": null,
     "awayScore": null,
@@ -557,14 +557,14 @@
     "kickoff": "2026-06-17T16:00:00-03:00",
     "venue": "Philadelphia",
     "home": {
-      "code": "A2",
-      "name": "Equipo A2",
-      "flag": "⚽"
+      "code": "RSA",
+      "name": "Sudáfrica",
+      "flag": "🇿🇦"
     },
     "away": {
-      "code": "A4",
-      "name": "Equipo A4",
-      "flag": "⚽"
+      "code": "CZE",
+      "name": "Chequia",
+      "flag": "🇨🇿"
     },
     "homeScore": null,
     "awayScore": null,
@@ -579,14 +579,14 @@
     "kickoff": "2026-06-17T19:00:00-03:00",
     "venue": "Vancouver",
     "home": {
-      "code": "B1",
-      "name": "Equipo B1",
-      "flag": "⚽"
+      "code": "CAN",
+      "name": "Canadá",
+      "flag": "🇨🇦"
     },
     "away": {
-      "code": "B3",
-      "name": "Equipo B3",
-      "flag": "⚽"
+      "code": "QAT",
+      "name": "Qatar",
+      "flag": "🇶🇦"
     },
     "homeScore": null,
     "awayScore": null,
@@ -601,14 +601,14 @@
     "kickoff": "2026-06-17T22:00:00-03:00",
     "venue": "Miami",
     "home": {
-      "code": "B2",
-      "name": "Equipo B2",
-      "flag": "⚽"
+      "code": "BIH",
+      "name": "Bosnia y H.",
+      "flag": "🇧🇦"
     },
     "away": {
-      "code": "B4",
-      "name": "Equipo B4",
-      "flag": "⚽"
+      "code": "SUI",
+      "name": "Suiza",
+      "flag": "🇨🇭"
     },
     "homeScore": null,
     "awayScore": null,
@@ -623,14 +623,14 @@
     "kickoff": "2026-06-18T13:00:00-03:00",
     "venue": "Monterrey",
     "home": {
-      "code": "C1",
-      "name": "Equipo C1",
-      "flag": "⚽"
+      "code": "BRA",
+      "name": "Brasil",
+      "flag": "🇧🇷"
     },
     "away": {
-      "code": "C3",
-      "name": "Equipo C3",
-      "flag": "⚽"
+      "code": "HAI",
+      "name": "Haití",
+      "flag": "🇭🇹"
     },
     "homeScore": null,
     "awayScore": null,
@@ -645,14 +645,14 @@
     "kickoff": "2026-06-18T16:00:00-03:00",
     "venue": "Kansas City",
     "home": {
-      "code": "C2",
-      "name": "Equipo C2",
-      "flag": "⚽"
+      "code": "MAR",
+      "name": "Marruecos",
+      "flag": "🇲🇦"
     },
     "away": {
-      "code": "C4",
-      "name": "Equipo C4",
-      "flag": "⚽"
+      "code": "SCO",
+      "name": "Escocia",
+      "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿"
     },
     "homeScore": null,
     "awayScore": null,
@@ -665,16 +665,16 @@
     "group": "D",
     "matchday": 2,
     "kickoff": "2026-06-18T19:00:00-03:00",
-    "venue": "Mexico City",
+    "venue": "Ciudad de México",
     "home": {
-      "code": "D1",
-      "name": "Equipo D1",
-      "flag": "⚽"
+      "code": "USA",
+      "name": "Estados Unidos",
+      "flag": "🇺🇸"
     },
     "away": {
-      "code": "D3",
-      "name": "Equipo D3",
-      "flag": "⚽"
+      "code": "AUS",
+      "name": "Australia",
+      "flag": "🇦🇺"
     },
     "homeScore": null,
     "awayScore": null,
@@ -689,14 +689,14 @@
     "kickoff": "2026-06-18T22:00:00-03:00",
     "venue": "Dallas",
     "home": {
-      "code": "D2",
-      "name": "Equipo D2",
-      "flag": "⚽"
+      "code": "PAR",
+      "name": "Paraguay",
+      "flag": "🇵🇾"
     },
     "away": {
-      "code": "D4",
-      "name": "Equipo D4",
-      "flag": "⚽"
+      "code": "TUR",
+      "name": "Turquía",
+      "flag": "🇹🇷"
     },
     "homeScore": null,
     "awayScore": null,
@@ -711,14 +711,14 @@
     "kickoff": "2026-06-19T13:00:00-03:00",
     "venue": "San Francisco Bay Area",
     "home": {
-      "code": "E1",
-      "name": "Equipo E1",
-      "flag": "⚽"
+      "code": "GER",
+      "name": "Alemania",
+      "flag": "🇩🇪"
     },
     "away": {
-      "code": "E3",
-      "name": "Equipo E3",
-      "flag": "⚽"
+      "code": "CIV",
+      "name": "Costa de Marfil",
+      "flag": "🇨🇮"
     },
     "homeScore": null,
     "awayScore": null,
@@ -733,14 +733,14 @@
     "kickoff": "2026-06-19T16:00:00-03:00",
     "venue": "Atlanta",
     "home": {
-      "code": "E2",
-      "name": "Equipo E2",
-      "flag": "⚽"
+      "code": "CUW",
+      "name": "Curazao",
+      "flag": "🇨🇼"
     },
     "away": {
-      "code": "E4",
-      "name": "Equipo E4",
-      "flag": "⚽"
+      "code": "ECU",
+      "name": "Ecuador",
+      "flag": "🇪🇨"
     },
     "homeScore": null,
     "awayScore": null,
@@ -753,16 +753,16 @@
     "group": "F",
     "matchday": 2,
     "kickoff": "2026-06-19T19:00:00-03:00",
-    "venue": "New York/New Jersey",
+    "venue": "Nueva York/Nueva Jersey",
     "home": {
-      "code": "F1",
-      "name": "Equipo F1",
-      "flag": "⚽"
+      "code": "NED",
+      "name": "Países Bajos",
+      "flag": "🇳🇱"
     },
     "away": {
-      "code": "F3",
-      "name": "Equipo F3",
-      "flag": "⚽"
+      "code": "SWE",
+      "name": "Suecia",
+      "flag": "🇸🇪"
     },
     "homeScore": null,
     "awayScore": null,
@@ -777,14 +777,14 @@
     "kickoff": "2026-06-19T22:00:00-03:00",
     "venue": "Toronto",
     "home": {
-      "code": "F2",
-      "name": "Equipo F2",
-      "flag": "⚽"
+      "code": "JPN",
+      "name": "Japón",
+      "flag": "🇯🇵"
     },
     "away": {
-      "code": "F4",
-      "name": "Equipo F4",
-      "flag": "⚽"
+      "code": "TUN",
+      "name": "Túnez",
+      "flag": "🇹🇳"
     },
     "homeScore": null,
     "awayScore": null,
@@ -797,16 +797,16 @@
     "group": "G",
     "matchday": 2,
     "kickoff": "2026-06-20T13:00:00-03:00",
-    "venue": "Los Angeles",
+    "venue": "Los Ángeles",
     "home": {
-      "code": "G1",
-      "name": "Equipo G1",
-      "flag": "⚽"
+      "code": "BEL",
+      "name": "Bélgica",
+      "flag": "🇧🇪"
     },
     "away": {
-      "code": "G3",
-      "name": "Equipo G3",
-      "flag": "⚽"
+      "code": "IRN",
+      "name": "Irán",
+      "flag": "🇮🇷"
     },
     "homeScore": null,
     "awayScore": null,
@@ -821,14 +821,14 @@
     "kickoff": "2026-06-20T16:00:00-03:00",
     "venue": "Guadalajara",
     "home": {
-      "code": "G2",
-      "name": "Equipo G2",
-      "flag": "⚽"
+      "code": "EGY",
+      "name": "Egipto",
+      "flag": "🇪🇬"
     },
     "away": {
-      "code": "G4",
-      "name": "Equipo G4",
-      "flag": "⚽"
+      "code": "NZL",
+      "name": "Nueva Zelanda",
+      "flag": "🇳🇿"
     },
     "homeScore": null,
     "awayScore": null,
@@ -843,14 +843,14 @@
     "kickoff": "2026-06-20T19:00:00-03:00",
     "venue": "Houston",
     "home": {
-      "code": "H1",
-      "name": "Equipo H1",
-      "flag": "⚽"
+      "code": "ESP",
+      "name": "España",
+      "flag": "🇪🇸"
     },
     "away": {
-      "code": "H3",
-      "name": "Equipo H3",
-      "flag": "⚽"
+      "code": "KSA",
+      "name": "Arabia Saudita",
+      "flag": "🇸🇦"
     },
     "homeScore": null,
     "awayScore": null,
@@ -865,14 +865,14 @@
     "kickoff": "2026-06-20T22:00:00-03:00",
     "venue": "Seattle",
     "home": {
-      "code": "H2",
-      "name": "Equipo H2",
-      "flag": "⚽"
+      "code": "CPV",
+      "name": "Cabo Verde",
+      "flag": "🇨🇻"
     },
     "away": {
-      "code": "H4",
-      "name": "Equipo H4",
-      "flag": "⚽"
+      "code": "URU",
+      "name": "Uruguay",
+      "flag": "🇺🇾"
     },
     "homeScore": null,
     "awayScore": null,
@@ -887,14 +887,14 @@
     "kickoff": "2026-06-21T13:00:00-03:00",
     "venue": "Boston",
     "home": {
-      "code": "I1",
-      "name": "Equipo I1",
-      "flag": "⚽"
+      "code": "FRA",
+      "name": "Francia",
+      "flag": "🇫🇷"
     },
     "away": {
-      "code": "I3",
-      "name": "Equipo I3",
-      "flag": "⚽"
+      "code": "IRQ",
+      "name": "Irak",
+      "flag": "🇮🇶"
     },
     "homeScore": null,
     "awayScore": null,
@@ -909,14 +909,14 @@
     "kickoff": "2026-06-21T16:00:00-03:00",
     "venue": "Philadelphia",
     "home": {
-      "code": "I2",
-      "name": "Equipo I2",
-      "flag": "⚽"
+      "code": "SEN",
+      "name": "Senegal",
+      "flag": "🇸🇳"
     },
     "away": {
-      "code": "I4",
-      "name": "Equipo I4",
-      "flag": "⚽"
+      "code": "NOR",
+      "name": "Noruega",
+      "flag": "🇳🇴"
     },
     "homeScore": null,
     "awayScore": null,
@@ -931,14 +931,14 @@
     "kickoff": "2026-06-21T19:00:00-03:00",
     "venue": "Vancouver",
     "home": {
-      "code": "J1",
-      "name": "Equipo J1",
-      "flag": "⚽"
+      "code": "ARG",
+      "name": "Argentina",
+      "flag": "🇦🇷"
     },
     "away": {
-      "code": "J3",
-      "name": "Equipo J3",
-      "flag": "⚽"
+      "code": "AUT",
+      "name": "Austria",
+      "flag": "🇦🇹"
     },
     "homeScore": null,
     "awayScore": null,
@@ -953,14 +953,14 @@
     "kickoff": "2026-06-21T22:00:00-03:00",
     "venue": "Miami",
     "home": {
-      "code": "J2",
-      "name": "Equipo J2",
-      "flag": "⚽"
+      "code": "ALG",
+      "name": "Argelia",
+      "flag": "🇩🇿"
     },
     "away": {
-      "code": "J4",
-      "name": "Equipo J4",
-      "flag": "⚽"
+      "code": "JOR",
+      "name": "Jordania",
+      "flag": "🇯🇴"
     },
     "homeScore": null,
     "awayScore": null,
@@ -975,14 +975,14 @@
     "kickoff": "2026-06-22T13:00:00-03:00",
     "venue": "Monterrey",
     "home": {
-      "code": "K1",
-      "name": "Equipo K1",
-      "flag": "⚽"
+      "code": "POR",
+      "name": "Portugal",
+      "flag": "🇵🇹"
     },
     "away": {
-      "code": "K3",
-      "name": "Equipo K3",
-      "flag": "⚽"
+      "code": "UZB",
+      "name": "Uzbekistán",
+      "flag": "🇺🇿"
     },
     "homeScore": null,
     "awayScore": null,
@@ -997,14 +997,14 @@
     "kickoff": "2026-06-22T16:00:00-03:00",
     "venue": "Kansas City",
     "home": {
-      "code": "K2",
-      "name": "Equipo K2",
-      "flag": "⚽"
+      "code": "COD",
+      "name": "RD del Congo",
+      "flag": "🇨🇩"
     },
     "away": {
-      "code": "K4",
-      "name": "Equipo K4",
-      "flag": "⚽"
+      "code": "COL",
+      "name": "Colombia",
+      "flag": "🇨🇴"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1017,16 +1017,16 @@
     "group": "L",
     "matchday": 2,
     "kickoff": "2026-06-22T19:00:00-03:00",
-    "venue": "Mexico City",
+    "venue": "Ciudad de México",
     "home": {
-      "code": "L1",
-      "name": "Equipo L1",
-      "flag": "⚽"
+      "code": "ENG",
+      "name": "Inglaterra",
+      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
     },
     "away": {
-      "code": "L3",
-      "name": "Equipo L3",
-      "flag": "⚽"
+      "code": "GHA",
+      "name": "Ghana",
+      "flag": "🇬🇭"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1041,14 +1041,14 @@
     "kickoff": "2026-06-22T22:00:00-03:00",
     "venue": "Dallas",
     "home": {
-      "code": "L2",
-      "name": "Equipo L2",
-      "flag": "⚽"
+      "code": "CRO",
+      "name": "Croacia",
+      "flag": "🇭🇷"
     },
     "away": {
-      "code": "L4",
-      "name": "Equipo L4",
-      "flag": "⚽"
+      "code": "PAN",
+      "name": "Panamá",
+      "flag": "🇵🇦"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1063,14 +1063,14 @@
     "kickoff": "2026-06-23T13:00:00-03:00",
     "venue": "San Francisco Bay Area",
     "home": {
-      "code": "A4",
-      "name": "Equipo A4",
-      "flag": "⚽"
+      "code": "CZE",
+      "name": "Chequia",
+      "flag": "🇨🇿"
     },
     "away": {
-      "code": "A1",
-      "name": "Equipo A1",
-      "flag": "⚽"
+      "code": "MEX",
+      "name": "México",
+      "flag": "🇲🇽"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1085,14 +1085,14 @@
     "kickoff": "2026-06-23T16:00:00-03:00",
     "venue": "Atlanta",
     "home": {
-      "code": "A2",
-      "name": "Equipo A2",
-      "flag": "⚽"
+      "code": "RSA",
+      "name": "Sudáfrica",
+      "flag": "🇿🇦"
     },
     "away": {
-      "code": "A3",
-      "name": "Equipo A3",
-      "flag": "⚽"
+      "code": "KOR",
+      "name": "Corea del Sur",
+      "flag": "🇰🇷"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1105,16 +1105,16 @@
     "group": "B",
     "matchday": 3,
     "kickoff": "2026-06-23T19:00:00-03:00",
-    "venue": "New York/New Jersey",
+    "venue": "Nueva York/Nueva Jersey",
     "home": {
-      "code": "B4",
-      "name": "Equipo B4",
-      "flag": "⚽"
+      "code": "SUI",
+      "name": "Suiza",
+      "flag": "🇨🇭"
     },
     "away": {
-      "code": "B1",
-      "name": "Equipo B1",
-      "flag": "⚽"
+      "code": "CAN",
+      "name": "Canadá",
+      "flag": "🇨🇦"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1129,14 +1129,14 @@
     "kickoff": "2026-06-23T22:00:00-03:00",
     "venue": "Toronto",
     "home": {
-      "code": "B2",
-      "name": "Equipo B2",
-      "flag": "⚽"
+      "code": "BIH",
+      "name": "Bosnia y H.",
+      "flag": "🇧🇦"
     },
     "away": {
-      "code": "B3",
-      "name": "Equipo B3",
-      "flag": "⚽"
+      "code": "QAT",
+      "name": "Qatar",
+      "flag": "🇶🇦"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1149,16 +1149,16 @@
     "group": "C",
     "matchday": 3,
     "kickoff": "2026-06-24T13:00:00-03:00",
-    "venue": "Los Angeles",
+    "venue": "Los Ángeles",
     "home": {
-      "code": "C4",
-      "name": "Equipo C4",
-      "flag": "⚽"
+      "code": "SCO",
+      "name": "Escocia",
+      "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿"
     },
     "away": {
-      "code": "C1",
-      "name": "Equipo C1",
-      "flag": "⚽"
+      "code": "BRA",
+      "name": "Brasil",
+      "flag": "🇧🇷"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1173,14 +1173,14 @@
     "kickoff": "2026-06-24T16:00:00-03:00",
     "venue": "Guadalajara",
     "home": {
-      "code": "C2",
-      "name": "Equipo C2",
-      "flag": "⚽"
+      "code": "MAR",
+      "name": "Marruecos",
+      "flag": "🇲🇦"
     },
     "away": {
-      "code": "C3",
-      "name": "Equipo C3",
-      "flag": "⚽"
+      "code": "HAI",
+      "name": "Haití",
+      "flag": "🇭🇹"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1195,14 +1195,14 @@
     "kickoff": "2026-06-24T19:00:00-03:00",
     "venue": "Houston",
     "home": {
-      "code": "D4",
-      "name": "Equipo D4",
-      "flag": "⚽"
+      "code": "TUR",
+      "name": "Turquía",
+      "flag": "🇹🇷"
     },
     "away": {
-      "code": "D1",
-      "name": "Equipo D1",
-      "flag": "⚽"
+      "code": "USA",
+      "name": "Estados Unidos",
+      "flag": "🇺🇸"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1217,14 +1217,14 @@
     "kickoff": "2026-06-24T22:00:00-03:00",
     "venue": "Seattle",
     "home": {
-      "code": "D2",
-      "name": "Equipo D2",
-      "flag": "⚽"
+      "code": "PAR",
+      "name": "Paraguay",
+      "flag": "🇵🇾"
     },
     "away": {
-      "code": "D3",
-      "name": "Equipo D3",
-      "flag": "⚽"
+      "code": "AUS",
+      "name": "Australia",
+      "flag": "🇦🇺"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1239,14 +1239,14 @@
     "kickoff": "2026-06-25T13:00:00-03:00",
     "venue": "Boston",
     "home": {
-      "code": "E4",
-      "name": "Equipo E4",
-      "flag": "⚽"
+      "code": "ECU",
+      "name": "Ecuador",
+      "flag": "🇪🇨"
     },
     "away": {
-      "code": "E1",
-      "name": "Equipo E1",
-      "flag": "⚽"
+      "code": "GER",
+      "name": "Alemania",
+      "flag": "🇩🇪"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1261,14 +1261,14 @@
     "kickoff": "2026-06-25T16:00:00-03:00",
     "venue": "Philadelphia",
     "home": {
-      "code": "E2",
-      "name": "Equipo E2",
-      "flag": "⚽"
+      "code": "CUW",
+      "name": "Curazao",
+      "flag": "🇨🇼"
     },
     "away": {
-      "code": "E3",
-      "name": "Equipo E3",
-      "flag": "⚽"
+      "code": "CIV",
+      "name": "Costa de Marfil",
+      "flag": "🇨🇮"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1283,14 +1283,14 @@
     "kickoff": "2026-06-25T19:00:00-03:00",
     "venue": "Vancouver",
     "home": {
-      "code": "F4",
-      "name": "Equipo F4",
-      "flag": "⚽"
+      "code": "TUN",
+      "name": "Túnez",
+      "flag": "🇹🇳"
     },
     "away": {
-      "code": "F1",
-      "name": "Equipo F1",
-      "flag": "⚽"
+      "code": "NED",
+      "name": "Países Bajos",
+      "flag": "🇳🇱"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1305,14 +1305,14 @@
     "kickoff": "2026-06-25T22:00:00-03:00",
     "venue": "Miami",
     "home": {
-      "code": "F2",
-      "name": "Equipo F2",
-      "flag": "⚽"
+      "code": "JPN",
+      "name": "Japón",
+      "flag": "🇯🇵"
     },
     "away": {
-      "code": "F3",
-      "name": "Equipo F3",
-      "flag": "⚽"
+      "code": "SWE",
+      "name": "Suecia",
+      "flag": "🇸🇪"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1327,14 +1327,14 @@
     "kickoff": "2026-06-26T13:00:00-03:00",
     "venue": "Monterrey",
     "home": {
-      "code": "G4",
-      "name": "Equipo G4",
-      "flag": "⚽"
+      "code": "NZL",
+      "name": "Nueva Zelanda",
+      "flag": "🇳🇿"
     },
     "away": {
-      "code": "G1",
-      "name": "Equipo G1",
-      "flag": "⚽"
+      "code": "BEL",
+      "name": "Bélgica",
+      "flag": "🇧🇪"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1349,14 +1349,14 @@
     "kickoff": "2026-06-26T16:00:00-03:00",
     "venue": "Kansas City",
     "home": {
-      "code": "G2",
-      "name": "Equipo G2",
-      "flag": "⚽"
+      "code": "EGY",
+      "name": "Egipto",
+      "flag": "🇪🇬"
     },
     "away": {
-      "code": "G3",
-      "name": "Equipo G3",
-      "flag": "⚽"
+      "code": "IRN",
+      "name": "Irán",
+      "flag": "🇮🇷"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1369,16 +1369,16 @@
     "group": "H",
     "matchday": 3,
     "kickoff": "2026-06-26T19:00:00-03:00",
-    "venue": "Mexico City",
+    "venue": "Ciudad de México",
     "home": {
-      "code": "H4",
-      "name": "Equipo H4",
-      "flag": "⚽"
+      "code": "URU",
+      "name": "Uruguay",
+      "flag": "🇺🇾"
     },
     "away": {
-      "code": "H1",
-      "name": "Equipo H1",
-      "flag": "⚽"
+      "code": "ESP",
+      "name": "España",
+      "flag": "🇪🇸"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1393,14 +1393,14 @@
     "kickoff": "2026-06-26T22:00:00-03:00",
     "venue": "Dallas",
     "home": {
-      "code": "H2",
-      "name": "Equipo H2",
-      "flag": "⚽"
+      "code": "CPV",
+      "name": "Cabo Verde",
+      "flag": "🇨🇻"
     },
     "away": {
-      "code": "H3",
-      "name": "Equipo H3",
-      "flag": "⚽"
+      "code": "KSA",
+      "name": "Arabia Saudita",
+      "flag": "🇸🇦"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1415,14 +1415,14 @@
     "kickoff": "2026-06-27T13:00:00-03:00",
     "venue": "San Francisco Bay Area",
     "home": {
-      "code": "I4",
-      "name": "Equipo I4",
-      "flag": "⚽"
+      "code": "NOR",
+      "name": "Noruega",
+      "flag": "🇳🇴"
     },
     "away": {
-      "code": "I1",
-      "name": "Equipo I1",
-      "flag": "⚽"
+      "code": "FRA",
+      "name": "Francia",
+      "flag": "🇫🇷"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1437,14 +1437,14 @@
     "kickoff": "2026-06-27T16:00:00-03:00",
     "venue": "Atlanta",
     "home": {
-      "code": "I2",
-      "name": "Equipo I2",
-      "flag": "⚽"
+      "code": "SEN",
+      "name": "Senegal",
+      "flag": "🇸🇳"
     },
     "away": {
-      "code": "I3",
-      "name": "Equipo I3",
-      "flag": "⚽"
+      "code": "IRQ",
+      "name": "Irak",
+      "flag": "🇮🇶"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1457,16 +1457,16 @@
     "group": "J",
     "matchday": 3,
     "kickoff": "2026-06-27T19:00:00-03:00",
-    "venue": "New York/New Jersey",
+    "venue": "Nueva York/Nueva Jersey",
     "home": {
-      "code": "J4",
-      "name": "Equipo J4",
-      "flag": "⚽"
+      "code": "JOR",
+      "name": "Jordania",
+      "flag": "🇯🇴"
     },
     "away": {
-      "code": "J1",
-      "name": "Equipo J1",
-      "flag": "⚽"
+      "code": "ARG",
+      "name": "Argentina",
+      "flag": "🇦🇷"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1481,14 +1481,14 @@
     "kickoff": "2026-06-27T22:00:00-03:00",
     "venue": "Toronto",
     "home": {
-      "code": "J2",
-      "name": "Equipo J2",
-      "flag": "⚽"
+      "code": "ALG",
+      "name": "Argelia",
+      "flag": "🇩🇿"
     },
     "away": {
-      "code": "J3",
-      "name": "Equipo J3",
-      "flag": "⚽"
+      "code": "AUT",
+      "name": "Austria",
+      "flag": "🇦🇹"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1501,16 +1501,16 @@
     "group": "K",
     "matchday": 3,
     "kickoff": "2026-06-28T13:00:00-03:00",
-    "venue": "Los Angeles",
+    "venue": "Los Ángeles",
     "home": {
-      "code": "K4",
-      "name": "Equipo K4",
-      "flag": "⚽"
+      "code": "COL",
+      "name": "Colombia",
+      "flag": "🇨🇴"
     },
     "away": {
-      "code": "K1",
-      "name": "Equipo K1",
-      "flag": "⚽"
+      "code": "POR",
+      "name": "Portugal",
+      "flag": "🇵🇹"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1525,14 +1525,14 @@
     "kickoff": "2026-06-28T16:00:00-03:00",
     "venue": "Guadalajara",
     "home": {
-      "code": "K2",
-      "name": "Equipo K2",
-      "flag": "⚽"
+      "code": "COD",
+      "name": "RD del Congo",
+      "flag": "🇨🇩"
     },
     "away": {
-      "code": "K3",
-      "name": "Equipo K3",
-      "flag": "⚽"
+      "code": "UZB",
+      "name": "Uzbekistán",
+      "flag": "🇺🇿"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1544,7 +1544,7 @@
     "stage": "r32",
     "matchday": null,
     "kickoff": "2026-06-28T16:00:00-03:00",
-    "venue": "Mexico City",
+    "venue": "Ciudad de México",
     "home": {
       "code": "r32-01-H",
       "name": "Por definir",
@@ -1568,14 +1568,14 @@
     "kickoff": "2026-06-28T19:00:00-03:00",
     "venue": "Houston",
     "home": {
-      "code": "L4",
-      "name": "Equipo L4",
-      "flag": "⚽"
+      "code": "PAN",
+      "name": "Panamá",
+      "flag": "🇵🇦"
     },
     "away": {
-      "code": "L1",
-      "name": "Equipo L1",
-      "flag": "⚽"
+      "code": "ENG",
+      "name": "Inglaterra",
+      "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1611,14 +1611,14 @@
     "kickoff": "2026-06-28T22:00:00-03:00",
     "venue": "Seattle",
     "home": {
-      "code": "L2",
-      "name": "Equipo L2",
-      "flag": "⚽"
+      "code": "CRO",
+      "name": "Croacia",
+      "flag": "🇭🇷"
     },
     "away": {
-      "code": "L3",
-      "name": "Equipo L3",
-      "flag": "⚽"
+      "code": "GHA",
+      "name": "Ghana",
+      "flag": "🇬🇭"
     },
     "homeScore": null,
     "awayScore": null,
@@ -1798,7 +1798,7 @@
     "stage": "r32",
     "matchday": null,
     "kickoff": "2026-07-01T19:00:00-03:00",
-    "venue": "Los Angeles",
+    "venue": "Los Ángeles",
     "home": {
       "code": "r32-11-H",
       "name": "Por definir",
@@ -1840,7 +1840,7 @@
     "stage": "r32",
     "matchday": null,
     "kickoff": "2026-07-02T16:00:00-03:00",
-    "venue": "New York/New Jersey",
+    "venue": "Nueva York/Nueva Jersey",
     "home": {
       "code": "r32-13-H",
       "name": "Por definir",
@@ -1924,7 +1924,7 @@
     "stage": "r16",
     "matchday": null,
     "kickoff": "2026-07-04T18:00:00-03:00",
-    "venue": "Mexico City",
+    "venue": "Ciudad de México",
     "home": {
       "code": "r16-01-H",
       "name": "Por definir",
@@ -2092,7 +2092,7 @@
     "stage": "qf",
     "matchday": null,
     "kickoff": "2026-07-09T18:00:00-03:00",
-    "venue": "Mexico City",
+    "venue": "Ciudad de México",
     "home": {
       "code": "qf-01-H",
       "name": "Por definir",
@@ -2176,7 +2176,7 @@
     "stage": "sf",
     "matchday": null,
     "kickoff": "2026-07-14T21:00:00-03:00",
-    "venue": "New York/New Jersey",
+    "venue": "Nueva York/Nueva Jersey",
     "home": {
       "code": "sf-01-H",
       "name": "Por definir",
@@ -2239,7 +2239,7 @@
     "stage": "final",
     "matchday": null,
     "kickoff": "2026-07-19T16:00:00-03:00",
-    "venue": "New York/New Jersey",
+    "venue": "Nueva York/Nueva Jersey",
     "home": {
       "code": "final-01-H",
       "name": "Por definir",
