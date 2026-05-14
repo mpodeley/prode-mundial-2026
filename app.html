@@ -185,6 +185,54 @@
       </div>
     </section>
 
+    <!-- GRUPOS TAB -->
+    <section x-show="!loading && tab==='groups'" x-cloak class="space-y-4">
+      <p class="text-emerald-200/80 text-sm">
+        Tabla de cada grupo. Se calcula con tus pronósticos de marcador y se actualiza con los resultados reales a medida que se juegan.
+        <br><span class="text-emerald-300/70 text-xs">Los pronósticos de "solo ganador" no aportan goles, por eso no afectan goles a favor/en contra acá.</span>
+      </p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+        <template x-for="g in groupStandings" :key="g.letter">
+          <div class="bg-white/5 border border-white/10 rounded-xl overflow-hidden">
+            <div class="bg-white/10 px-3 py-1.5 flex justify-between items-center">
+              <h3 class="font-bold text-amber-300">Grupo <span x-text="g.letter"></span></h3>
+              <span class="text-[10px] text-emerald-200/60 uppercase">Pts · DG · GF</span>
+            </div>
+            <table class="w-full text-xs">
+              <tbody>
+                <template x-for="(row, i) in g.rows" :key="row.team.code">
+                  <tr :class="[
+                        i === 0 || i === 1 ? 'bg-emerald-500/10' : '',
+                        i === 2 ? 'bg-amber-500/10' : '',
+                        i === 3 ? 'opacity-60' : ''
+                      ]" class="border-t border-white/5">
+                    <td class="px-2 py-1.5 w-5 text-emerald-200/80 font-bold tabular-nums" x-text="i+1"></td>
+                    <td class="px-1 py-1.5 w-6"><span x-html="flagHtml(row.team, 'small')"></span></td>
+                    <td class="px-1 py-1.5 truncate">
+                      <span x-text="row.team.name"></span>
+                      <span x-show="row.hasReal" class="text-[9px] text-emerald-300 ml-0.5" title="Incluye resultados reales">●</span>
+                    </td>
+                    <td class="px-1 py-1.5 text-right font-bold tabular-nums" x-text="row.pts"></td>
+                    <td class="px-1 py-1.5 text-right tabular-nums"
+                        :class="(row.gf - row.ga) > 0 ? 'text-emerald-300' : (row.gf - row.ga) < 0 ? 'text-red-300' : 'text-white/60'"
+                        x-text="((row.gf - row.ga) > 0 ? '+' : '') + (row.gf - row.ga)"></td>
+                    <td class="px-2 py-1.5 text-right tabular-nums text-emerald-200/70" x-text="row.gf"></td>
+                  </tr>
+                </template>
+              </tbody>
+            </table>
+          </div>
+        </template>
+      </div>
+
+      <div class="text-xs text-emerald-200/60 flex flex-wrap gap-4 justify-center pt-2">
+        <span class="flex items-center gap-1"><span class="inline-block w-3 h-3 bg-emerald-500/30 rounded"></span> Clasifica directo (1° y 2°)</span>
+        <span class="flex items-center gap-1"><span class="inline-block w-3 h-3 bg-amber-500/30 rounded"></span> Mejor 3° posible</span>
+        <span>● = ya jugado</span>
+      </div>
+    </section>
+
     <!-- LLAVES (BRACKET) TAB -->
     <section x-show="!loading && tab==='bracket'" x-cloak class="space-y-6">
       <p class="text-emerald-200/80 text-sm">

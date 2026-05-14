@@ -55,6 +55,7 @@ function prodeAppData() {
     get tabs() {
       return [
         { id: "fixtures", label: "Fixtures" },
+        { id: "groups",   label: "Grupos" },
         { id: "bracket",  label: "Llaves" },
         { id: "mine",     label: "Mis pronósticos", badge: this.pendingMatches.length || null },
         { id: "ranking",  label: "Ranking" }
@@ -270,6 +271,64 @@ function prodeAppData() {
       return Object.values(stats).sort((a, b) =>
         b.total - a.total || b.exact - a.exact || a.nickname.localeCompare(b.nickname)
       );
+    },
+
+    // --- Standings de grupos (predicho + tiempo real combinado) ---
+    get groupStandings() {
+      const groups = {};
+      const groupMatches = this.matches.filter(m => m.stage === "group");
+
+      for (const m of groupMatches) {
+        const g = m.group;
+        if (!groups[g]) groups[g] = {};
+        for (const t of [m.home, m.away]) {
+          if (!t?.code) continue;
+          if (!groups[g][t.code]) {
+            groups[g][t.code] = {
+              team: t, played: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, pts: 0,
+              hasPredicted: false, hasReal: false
+            };
+          }
+        }
+
+        let hs, as, source = null;
+        if (m.status === "finished" && m.homeScore != null && m.awayScore != null) {
+          hs = m.homeScore; as = m.awayScore; source = "real";
+        } else {
+          const p = this.myPredictions[m.id];
+          // Solo predicciones de marcador (score). Las de solo-ganador no aportan a goles.
+          if (p && p.type !== "winner" && Number.isInteger(p.home) && Number.isInteger(p.away)) {
+            hs = p.home; as = p.away; source = "pred";
+          }
+        }
+        if (hs == null) continue;
+
+        const H = groups[g][m.home.code];
+        const A = groups[g][m.away.code];
+        H.played++; A.played++;
+        H.gf += hs; H.ga += as;
+        A.gf += as; A.ga += hs;
+        if (hs > as)      { H.w++; A.l++; H.pts += 3; }
+        else if (hs < as) { A.w++; H.l++; A.pts += 3; }
+        else              { H.d++; A.d++; H.pts++; A.pts++; }
+        if (source === "real") { H.hasReal = true; A.hasReal = true; }
+        if (source === "pred") { H.hasPredicted = true; A.hasPredicted = true; }
+      }
+
+      const cmp = (a, b) =>
+        b.pts - a.pts ||
+        (b.gf - b.ga) - (a.gf - a.ga) ||
+        b.gf - a.gf ||
+        a.team.name.localeCompare(b.team.name);
+
+      const out = [];
+      for (const g of Object.keys(groups).sort()) {
+        out.push({
+          letter: g,
+          rows: Object.values(groups[g]).sort(cmp)
+        });
+      }
+      return out;
     },
 
     // --- Bracket ---
