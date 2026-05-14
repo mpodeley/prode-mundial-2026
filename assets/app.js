@@ -33,6 +33,11 @@ const fmt = new Intl.DateTimeFormat("es-AR", {
   timeZone: "America/Argentina/Buenos_Aires"
 });
 
+const fmtShort = new Intl.DateTimeFormat("es-AR", {
+  day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit",
+  timeZone: "America/Argentina/Buenos_Aires"
+});
+
 function escapeHtml(s) {
   return String(s ?? "").replace(/[&<>"']/g, c => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" }[c]));
 }
@@ -139,6 +144,12 @@ function prodeAppData() {
       if (!d) return "";
       const date = d instanceof Date ? d : new Date(d);
       return fmt.format(date);
+    },
+
+    formatKickoffShort(d) {
+      if (!d) return "";
+      const date = d instanceof Date ? d : new Date(d);
+      return fmtShort.format(date);
     },
 
     pointsFor(m) {
@@ -271,6 +282,13 @@ function prodeAppData() {
       return Object.values(stats).sort((a, b) =>
         b.total - a.total || b.exact - a.exact || a.nickname.localeCompare(b.nickname)
       );
+    },
+
+    // Partidos de un grupo, ordenados por fecha
+    matchesOfGroup(letter) {
+      return this.matches
+        .filter(m => m.stage === "group" && m.group === letter)
+        .sort((a, b) => a.kickoff - b.kickoff);
     },
 
     // --- Standings de grupos (predicho + tiempo real combinado) ---
